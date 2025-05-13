@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Course Staff (Communal Document)">
-<meta name="dcterms.date" content="2025-05-12">
+<meta name="dcterms.date" content="2025-05-13">
 
 <title>Assignment 2</title>
 <style>
@@ -3168,7 +3168,7 @@ font-size: 1em !important;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 12, 2025</p>
+      <p class="date">May 13, 2025</p>
     </div>
   </div>
   
@@ -3444,44 +3444,44 @@ Returns this card’s effect.</li>
 <li><code>is_permanent(self) -&gt; bool</code> Returns if this card is permanent or not.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="f2edbcac" class="cell" data-execution_count="2">
+<div id="c3670781" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> Card()</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>Card()</code></pre>
 </div>
 </div>
-<div id="dac110c7" class="cell" data-execution_count="3">
+<div id="509c548a" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(card)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>&#39;Card: A card.&#39;</code></pre>
 </div>
 </div>
-<div id="11d8a33a" class="cell" data-execution_count="4">
+<div id="2e530df5" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>&#39;C&#39;</code></pre>
 </div>
 </div>
-<div id="482862e8" class="cell" data-execution_count="5">
+<div id="4967e4f0" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>&#39;Card&#39;</code></pre>
 </div>
 </div>
-<div id="8107bf1e" class="cell" data-execution_count="6">
+<div id="396c37d1" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="0930ba0e" class="cell" data-execution_count="7">
+<div id="17d66efb" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>{}</code></pre>
 </div>
 </div>
-<div id="e2f203a2" class="cell" data-execution_count="8">
+<div id="7c04b058" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>False</code></pre>
@@ -3492,44 +3492,44 @@ Returns this card’s effect.</li>
 <h4 class="anchored" data-anchor-id="task-shieldcard">Task 2 <code>Shield(Card)</code></h4>
 <p><code>Shield</code> is a card that applies 5 shield to a target entity. Shield cards cost 1, and are represented by the symbol <code>S</code></p>
 <p><u>Example:</u></p>
-<div id="e212be5f" class="cell" data-execution_count="9">
+<div id="6b775a95" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> Shield()</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>Shield()</code></pre>
 </div>
 </div>
-<div id="4bf068c1" class="cell" data-execution_count="10">
+<div id="2bcd8e0c" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(card)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>&#39;Shield: Cast a protective shield that can absorb 5 damage.&#39;</code></pre>
 </div>
 </div>
-<div id="aa91ff8e" class="cell" data-execution_count="11">
+<div id="e6f1743d" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>&#39;S&#39;</code></pre>
 </div>
 </div>
-<div id="2c692829" class="cell" data-execution_count="12">
+<div id="581235ef" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>&#39;Shield&#39;</code></pre>
 </div>
 </div>
-<div id="74616748" class="cell" data-execution_count="13">
+<div id="cca7c9c4" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="598c9076" class="cell" data-execution_count="14">
+<div id="89c0ada3" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>{&#39;shield&#39;: 5}</code></pre>
 </div>
 </div>
-<div id="e80cf840" class="cell" data-execution_count="15">
+<div id="31e38aba" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>False</code></pre>
@@ -3540,44 +3540,44 @@ Returns this card’s effect.</li>
 <h4 class="anchored" data-anchor-id="task-healcard">Task 3 <code>Heal(Card)</code></h4>
 <p><code>Heal</code> is a card that applies 2 heal to a target entity. Heal cards cost 2, and are represented by the symbol <code>H</code></p>
 <p><u>Example:</u></p>
-<div id="14c67fa3" class="cell" data-execution_count="16">
+<div id="21ef2c31" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> Heal()</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>Heal()</code></pre>
 </div>
 </div>
-<div id="1dafb1b3" class="cell" data-execution_count="17">
+<div id="adb15a66" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(card)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>&#39;Heal: Cast an aura on target. It recovers 2 health.&#39;</code></pre>
 </div>
 </div>
-<div id="5844360b" class="cell" data-execution_count="18">
+<div id="40ac252a" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>&#39;H&#39;</code></pre>
 </div>
 </div>
-<div id="111d8d6d" class="cell" data-execution_count="19">
+<div id="cfb92658" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>&#39;Heal&#39;</code></pre>
 </div>
 </div>
-<div id="4ee42ff9" class="cell" data-execution_count="20">
+<div id="1a3efd60" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="79cabc1e" class="cell" data-execution_count="21">
+<div id="69a85fcd" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>{&#39;health&#39;: 2}</code></pre>
 </div>
 </div>
-<div id="0dba046c" class="cell" data-execution_count="22">
+<div id="25181c23" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>False</code></pre>
@@ -3595,63 +3595,63 @@ Initialise a new <code>Fireball</code> instance, with the given number of turns 
 Register another turn spent in a hero’s hand.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="e1641eee" class="cell" data-execution_count="23">
+<div id="62c39f14" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> Fireball(<span class="dv">7</span>)</span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>Fireball(7)</code></pre>
 </div>
 </div>
-<div id="116ff9e3" class="cell" data-execution_count="24">
+<div id="4f9e2d95" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(card)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>&#39;Fireball: FIREBALL! Deals 3 + [turns in hand] damage. Currently dealing 10 damage.&#39;</code></pre>
 </div>
 </div>
-<div id="fa4123c9" class="cell" data-execution_count="25">
+<div id="fc62c240" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>&#39;7&#39;</code></pre>
 </div>
 </div>
-<div id="a45deca8" class="cell" data-execution_count="26">
+<div id="3246ab1e" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>&#39;Fireball&#39;</code></pre>
 </div>
 </div>
-<div id="5bac3623" class="cell" data-execution_count="27">
+<div id="4b8f6773" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="68bdada5" class="cell" data-execution_count="28">
+<div id="70b5c0ae" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>{&#39;damage&#39;: 10}</code></pre>
 </div>
 </div>
-<div id="0e670b62" class="cell" data-execution_count="29">
+<div id="84c9d6bc" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="05122f31" class="cell" data-execution_count="30">
+<div id="b7309e69" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.increment_turn()</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <pre><code>Fireball(8)</code></pre>
 </div>
 </div>
-<div id="0bd92e22" class="cell" data-execution_count="31">
+<div id="db1f6230" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="31">
 <pre><code>&#39;8&#39;</code></pre>
 </div>
 </div>
-<div id="1e33e71e" class="cell" data-execution_count="32">
+<div id="918bba4f" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="32">
 <pre><code>{&#39;damage&#39;: 11}</code></pre>
@@ -3677,7 +3677,7 @@ Returns if this <code>CardDeck</code> is empty or not.</li>
 Adds the given card to the bottom of the deck.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="4b8e2ecb" class="cell" data-execution_count="33">
+<div id="58f810e2" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> cards <span class="op">=</span> [Card(), Card(), Shield(), Heal(), Fireball(<span class="dv">6</span>)]</span>
 <span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck <span class="op">=</span> CardDeck(cards)</span>
 <span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3685,70 +3685,70 @@ Adds the given card to the bottom of the deck.</li>
 <pre><code>CardDeck([Card(), Card(), Shield(), Heal(), Fireball(6)])</code></pre>
 </div>
 </div>
-<div id="4338ecee" class="cell" data-execution_count="34">
+<div id="d0a147f5" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(deck)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="34">
 <pre><code>&#39;C,C,S,H,6&#39;</code></pre>
 </div>
 </div>
-<div id="74ea4f97" class="cell" data-execution_count="35">
+<div id="83d3c7a8" class="cell" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.remaining_count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="35">
 <pre><code>5</code></pre>
 </div>
 </div>
-<div id="6cb370c9" class="cell" data-execution_count="36">
+<div id="3894aaac" class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.is_empty()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="36">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="2a3e90b1" class="cell" data-execution_count="37">
+<div id="d1e9c319" class="cell" data-execution_count="37">
 <div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.draw_cards(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="37">
 <pre><code>[Card(), Card(), Shield()]</code></pre>
 </div>
 </div>
-<div id="ee8ca411" class="cell" data-execution_count="38">
+<div id="b6c4c96e" class="cell" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.remaining_count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="79700a5d" class="cell" data-execution_count="39">
+<div id="6d98d0a6" class="cell" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(deck)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="39">
 <pre><code>&#39;H,6&#39;</code></pre>
 </div>
 </div>
-<div id="38f2169e" class="cell" data-execution_count="40">
+<div id="32ee80f3" class="cell" data-execution_count="40">
 <div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.add_card(Fireball(<span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="fd95d696" class="cell" data-execution_count="41">
+<div id="cc42914f" class="cell" data-execution_count="41">
 <div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.remaining_count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="41">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="fd436aaf" class="cell" data-execution_count="42">
+<div id="b566c248" class="cell" data-execution_count="42">
 <div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(deck)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="42">
 <pre><code>&#39;H,6,5&#39;</code></pre>
 </div>
 </div>
-<div id="526602ee" class="cell" data-execution_count="43">
+<div id="796ad962" class="cell" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.draw_cards(<span class="dv">1001</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="43">
 <pre><code>[Heal(), Fireball(6), Fireball(5)]</code></pre>
 </div>
 </div>
-<div id="1c2b92bc" class="cell" data-execution_count="44">
+<div id="61531ca6" class="cell" data-execution_count="44">
 <div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(deck)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="44">
 <pre><code>&#39;&#39;</code></pre>
 </div>
 </div>
-<div id="98f7129e" class="cell" data-execution_count="45">
+<div id="0e0c4e58" class="cell" data-execution_count="45">
 <div class="sourceCode cell-code" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck.is_empty()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="45">
 <pre><code>True</code></pre>
@@ -3780,66 +3780,66 @@ Applies the given amount of damage as per <a href="#tbl-effects" class="quarto-x
 Returns if this entity is alive or not.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="b8fc291b" class="cell" data-execution_count="46">
+<div id="f95b1826" class="cell" data-execution_count="46">
 <div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity <span class="op">=</span> Entity(<span class="dv">5</span>,<span class="dv">3</span>)</span>
 <span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="46">
 <pre><code>Entity(5, 3)</code></pre>
 </div>
 </div>
-<div id="32305b7f" class="cell" data-execution_count="47">
+<div id="2840b843" class="cell" data-execution_count="47">
 <div class="sourceCode cell-code" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(entity)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="47">
 <pre><code>&#39;5,3&#39;</code></pre>
 </div>
 </div>
-<div id="13362cf8" class="cell" data-execution_count="48">
+<div id="33f73a6a" class="cell" data-execution_count="48">
 <div class="sourceCode cell-code" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.get_health()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="48">
 <pre><code>5</code></pre>
 </div>
 </div>
-<div id="56c15b0a" class="cell" data-execution_count="49">
+<div id="d0772a0f" class="cell" data-execution_count="49">
 <div class="sourceCode cell-code" id="cb94"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.get_shield()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="49">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="41741873" class="cell" data-execution_count="50">
+<div id="75a0c5c5" class="cell" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb96"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.apply_shield(<span class="dv">1</span>)</span>
 <span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="50">
 <pre><code>Entity(5, 4)</code></pre>
 </div>
 </div>
-<div id="dd313e53" class="cell" data-execution_count="51">
+<div id="c102ccb6" class="cell" data-execution_count="51">
 <div class="sourceCode cell-code" id="cb98"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.apply_health(<span class="dv">10</span>)</span>
 <span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="51">
 <pre><code>Entity(15, 4)</code></pre>
 </div>
 </div>
-<div id="a08ff993" class="cell" data-execution_count="52">
+<div id="a05ae456" class="cell" data-execution_count="52">
 <div class="sourceCode cell-code" id="cb100"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.apply_damage(<span class="dv">10</span>)</span>
 <span id="cb100-2"><a href="#cb100-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="52">
 <pre><code>Entity(9, 0)</code></pre>
 </div>
 </div>
-<div id="3f9b9bd2" class="cell" data-execution_count="53">
+<div id="b353a300" class="cell" data-execution_count="53">
 <div class="sourceCode cell-code" id="cb102"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.is_alive()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="53">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="07c91eb2" class="cell" data-execution_count="54">
+<div id="8fcf02ba" class="cell" data-execution_count="54">
 <div class="sourceCode cell-code" id="cb104"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.apply_damage(<span class="dv">9999999999</span>)</span>
 <span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.get_health()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="54">
 <pre><code>0</code></pre>
 </div>
 </div>
-<div id="804cc5f6" class="cell" data-execution_count="55">
+<div id="4a6549d7" class="cell" data-execution_count="55">
 <div class="sourceCode cell-code" id="cb106"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> entity.is_alive()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="55">
 <pre><code>False</code></pre>
@@ -3869,7 +3869,7 @@ Returns this hero’s hand, in order.</li>
 Registers a new turn of all fireball cards in this hero’s hand, draws from their deck into their hand, expands their energy capacity by 1, and refills their energy level, as per the <a href="#gameplay">Gameplay Section</a></li>
 </ul>
 <p><u>Example:</u></p>
-<div id="6ceaea7a" class="cell" data-execution_count="56">
+<div id="14d99dfc" class="cell" data-execution_count="56">
 <div class="sourceCode cell-code" id="cb108"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> cards <span class="op">=</span> [Card(), Card(), Shield(), Heal(), Fireball(<span class="dv">6</span>)]</span>
 <span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck <span class="op">=</span> CardDeck(cards)</span>
 <span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hand <span class="op">=</span> [Heal(),Heal(),Fireball(<span class="dv">2</span>)]</span>
@@ -3879,86 +3879,86 @@ Registers a new turn of all fireball cards in this hero’s hand, draws from the
 <pre><code>Hero(4, 5, 3, CardDeck([Card(), Card(), Shield(), Heal(), Fireball(6)]), [Heal(), Heal(), Fireball(2)])</code></pre>
 </div>
 </div>
-<div id="742a7bda" class="cell" data-execution_count="57">
+<div id="1e1e6319" class="cell" data-execution_count="57">
 <div class="sourceCode cell-code" id="cb110"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(hero)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="57">
 <pre><code>&#39;4,5,3;C,C,S,H,6;H,H,2&#39;</code></pre>
 </div>
 </div>
-<div id="e691b7e6" class="cell" data-execution_count="58">
+<div id="fa5b0dd4" class="cell" data-execution_count="58">
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_energy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="58">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="f06c1cee" class="cell" data-execution_count="59">
+<div id="c5e0bd48" class="cell" data-execution_count="59">
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_max_energy() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="59">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="189d9551" class="cell" data-execution_count="60">
+<div id="e90b1a17" class="cell" data-execution_count="60">
 <div class="sourceCode cell-code" id="cb116"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.spend_energy(<span class="dv">123456789</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="60">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="8223427c" class="cell" data-execution_count="61">
+<div id="5e331063" class="cell" data-execution_count="61">
 <div class="sourceCode cell-code" id="cb118"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_energy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="61">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="5ac5e30a" class="cell" data-execution_count="62">
+<div id="1fb72aad" class="cell" data-execution_count="62">
 <div class="sourceCode cell-code" id="cb120"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.spend_energy(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="62">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="60290b40" class="cell" data-execution_count="63">
+<div id="d8cabd58" class="cell" data-execution_count="63">
 <div class="sourceCode cell-code" id="cb122"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_energy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="63">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="f87d909a" class="cell" data-execution_count="64">
+<div id="5a5bb780" class="cell" data-execution_count="64">
 <div class="sourceCode cell-code" id="cb124"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_max_energy() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="64">
 <pre><code>3</code></pre>
 </div>
 </div>
-<div id="26346ab6" class="cell" data-execution_count="65">
+<div id="f8adab64" class="cell" data-execution_count="65">
 <div class="sourceCode cell-code" id="cb126"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_deck()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="65">
 <pre><code>CardDeck([Card(), Card(), Shield(), Heal(), Fireball(6)])</code></pre>
 </div>
 </div>
-<div id="a87acb57" class="cell" data-execution_count="66">
+<div id="8e1f9aa8" class="cell" data-execution_count="66">
 <div class="sourceCode cell-code" id="cb128"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_hand()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="66">
 <pre><code>[Heal(), Heal(), Fireball(2)]</code></pre>
 </div>
 </div>
-<div id="e0cc72e9" class="cell" data-execution_count="67">
+<div id="c4e184e2" class="cell" data-execution_count="67">
 <div class="sourceCode cell-code" id="cb130"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb130-1"><a href="#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.new_turn() </span>
 <span id="cb130-2"><a href="#cb130-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_energy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="67">
 <pre><code>4</code></pre>
 </div>
 </div>
-<div id="a43a1953" class="cell" data-execution_count="68">
+<div id="109891be" class="cell" data-execution_count="68">
 <div class="sourceCode cell-code" id="cb132"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb132-1"><a href="#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_max_energy() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="68">
 <pre><code>4</code></pre>
 </div>
 </div>
-<div id="88b43e6a" class="cell" data-execution_count="69">
+<div id="b81d00ea" class="cell" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb134"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_deck()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="69">
 <pre><code>CardDeck([Shield(), Heal(), Fireball(6)])</code></pre>
 </div>
 </div>
-<div id="c3a5aa2e" class="cell" data-execution_count="70">
+<div id="58e50e0f" class="cell" data-execution_count="70">
 <div class="sourceCode cell-code" id="cb136"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero.get_hand()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="70">
 <pre><code>[Heal(), Heal(), Fireball(3), Card(), Card()]</code></pre>
@@ -3980,89 +3980,89 @@ Returns the name and description of this card</li>
 Select this minion’s target out of the given entities. Note that here, the allied hero and minions will be those friendly to this minion, not necessarily to the player. This logic extends to the specified enemy hero and minions. minions should be provided in the order they appear in their respective minion slots, from left to right.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="59756516" class="cell" data-execution_count="71">
+<div id="ecea53be" class="cell" data-execution_count="71">
 <div class="sourceCode cell-code" id="cb138"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion <span class="op">=</span> Minion(<span class="dv">1</span>,<span class="dv">0</span>)</span>
 <span id="cb138-2"><a href="#cb138-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="71">
 <pre><code>Minion(1, 0)</code></pre>
 </div>
 </div>
-<div id="894a8fd6" class="cell" data-execution_count="72">
+<div id="3a30a287" class="cell" data-execution_count="72">
 <div class="sourceCode cell-code" id="cb140"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(minion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="72">
 <pre><code>&#39;Minion: Summon a minion.&#39;</code></pre>
 </div>
 </div>
-<div id="aeecd7ce" class="cell" data-execution_count="73">
+<div id="79a22f24" class="cell" data-execution_count="73">
 <div class="sourceCode cell-code" id="cb142"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="73">
 <pre><code>&#39;M&#39;</code></pre>
 </div>
 </div>
-<div id="02fc512d" class="cell" data-execution_count="74">
+<div id="a06668b4" class="cell" data-execution_count="74">
 <div class="sourceCode cell-code" id="cb144"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="74">
 <pre><code>&#39;Minion&#39;</code></pre>
 </div>
 </div>
-<div id="6d42ea93" class="cell" data-execution_count="75">
+<div id="5938d838" class="cell" data-execution_count="75">
 <div class="sourceCode cell-code" id="cb146"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="75">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="406b77a7" class="cell" data-execution_count="76">
+<div id="cc310b72" class="cell" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb148"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="76">
 <pre><code>{}</code></pre>
 </div>
 </div>
-<div id="1294a35b" class="cell" data-execution_count="77">
+<div id="5c3736e7" class="cell" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb150"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="77">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="b6b247ef" class="cell" data-execution_count="78">
+<div id="4c80c864" class="cell" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb152"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb152-1"><a href="#cb152-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_health()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="78">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="dbe4adb1" class="cell" data-execution_count="79">
+<div id="634f7a53" class="cell" data-execution_count="79">
 <div class="sourceCode cell-code" id="cb154"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb154-1"><a href="#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_shield()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="79">
 <pre><code>0</code></pre>
 </div>
 </div>
-<div id="3ffde097" class="cell" data-execution_count="80">
+<div id="b0402c51" class="cell" data-execution_count="80">
 <div class="sourceCode cell-code" id="cb156"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb156-1"><a href="#cb156-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.apply_shield(<span class="dv">1</span>)</span>
 <span id="cb156-2"><a href="#cb156-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="80">
 <pre><code>Minion(1, 1)</code></pre>
 </div>
 </div>
-<div id="38d39c75" class="cell" data-execution_count="81">
+<div id="42639a4b" class="cell" data-execution_count="81">
 <div class="sourceCode cell-code" id="cb158"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb158-1"><a href="#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.apply_health(<span class="dv">10</span>)</span>
 <span id="cb158-2"><a href="#cb158-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="81">
 <pre><code>Minion(11, 1)</code></pre>
 </div>
 </div>
-<div id="8fb88dcd" class="cell" data-execution_count="82">
+<div id="792e37ea" class="cell" data-execution_count="82">
 <div class="sourceCode cell-code" id="cb160"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb160-1"><a href="#cb160-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.apply_damage(<span class="dv">10</span>)</span>
 <span id="cb160-2"><a href="#cb160-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="82">
 <pre><code>Minion(2, 0)</code></pre>
 </div>
 </div>
-<div id="b82b680b" class="cell" data-execution_count="83">
+<div id="23dffb47" class="cell" data-execution_count="83">
 <div class="sourceCode cell-code" id="cb162"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.is_alive()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="83">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="93c39bd8" class="cell" data-execution_count="84">
+<div id="8a8da3af" class="cell" data-execution_count="84">
 <div class="sourceCode cell-code" id="cb164"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero_friend <span class="op">=</span> Hero(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,CardDeck([Fireball(<span class="dv">8</span>)]), [])</span>
 <span id="cb164-2"><a href="#cb164-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero_foe <span class="op">=</span> Hero(<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>,CardDeck([Card()]), [Shield()])</span>
 <span id="cb164-3"><a href="#cb164-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minions_friend <span class="op">=</span> [Minion(<span class="dv">1</span>,<span class="dv">0</span>),Minion(<span class="dv">2</span>,<span class="dv">0</span>),Minion(<span class="dv">1</span>,<span class="dv">2</span>)]</span>
@@ -4079,50 +4079,50 @@ Select this minion’s target out of the given entities. Note that here, the all
 <p>When selecting a target entity, a <code>Wyrm</code> will choose the allied entity with the lowest health.</p>
 <p>If multiple entities have the lowest health, if one of the tied entities is the allied hero, the allied hero should be selected. Otherwise, the leftmost tied minion should be selected.</p>
 <p><u>Example:</u></p>
-<div id="e373b3f0" class="cell" data-execution_count="85">
+<div id="c8d1c027" class="cell" data-execution_count="85">
 <div class="sourceCode cell-code" id="cb166"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion <span class="op">=</span> Wyrm(<span class="dv">2</span>,<span class="dv">2</span>)</span>
 <span id="cb166-2"><a href="#cb166-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="85">
 <pre><code>Wyrm(2, 2)</code></pre>
 </div>
 </div>
-<div id="317208b4" class="cell" data-execution_count="86">
+<div id="ed92aec5" class="cell" data-execution_count="86">
 <div class="sourceCode cell-code" id="cb168"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(minion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="86">
 <pre><code>&#39;Wyrm: Summon a Mana Wyrm to buff your minions.&#39;</code></pre>
 </div>
 </div>
-<div id="30486c95" class="cell" data-execution_count="87">
+<div id="31fa65b9" class="cell" data-execution_count="87">
 <div class="sourceCode cell-code" id="cb170"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb170-1"><a href="#cb170-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="87">
 <pre><code>&#39;W&#39;</code></pre>
 </div>
 </div>
-<div id="57cae4ea" class="cell" data-execution_count="88">
+<div id="3934ca2d" class="cell" data-execution_count="88">
 <div class="sourceCode cell-code" id="cb172"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="88">
 <pre><code>&#39;Wyrm&#39;</code></pre>
 </div>
 </div>
-<div id="b44d2de6" class="cell" data-execution_count="89">
+<div id="84437424" class="cell" data-execution_count="89">
 <div class="sourceCode cell-code" id="cb174"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb174-1"><a href="#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="89">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="93d3be2f" class="cell" data-execution_count="90">
+<div id="45351f99" class="cell" data-execution_count="90">
 <div class="sourceCode cell-code" id="cb176"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb176-1"><a href="#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="90">
 <pre><code>{&#39;health&#39;: 1, &#39;shield&#39;: 1}</code></pre>
 </div>
 </div>
-<div id="0b12def1" class="cell" data-execution_count="91">
+<div id="20ad7686" class="cell" data-execution_count="91">
 <div class="sourceCode cell-code" id="cb178"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="91">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="dd15a82f" class="cell" data-execution_count="92">
+<div id="62a0a63e" class="cell" data-execution_count="92">
 <div class="sourceCode cell-code" id="cb180"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero_friend <span class="op">=</span> Hero(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,CardDeck([Fireball(<span class="dv">8</span>)]), [])</span>
 <span id="cb180-2"><a href="#cb180-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero_foe <span class="op">=</span> Hero(<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>,CardDeck([Card()]), [Shield()])</span>
 <span id="cb180-3"><a href="#cb180-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minions_friend <span class="op">=</span> [Minion(<span class="dv">1</span>,<span class="dv">0</span>),Minion(<span class="dv">2</span>,<span class="dv">0</span>),Minion(<span class="dv">1</span>,<span class="dv">2</span>)]</span>
@@ -4139,59 +4139,59 @@ Select this minion’s target out of the given entities. Note that here, the all
 <p>When selecting a target entity, a <code>Raptor</code> will choose the enemy minion with the highest health. If there is no such minion, it will select the enemy hero.</p>
 <p>If multiple minions have the highest health, the leftmost tied minion should be selected.</p>
 <p><u>Example:</u></p>
-<div id="318c470e" class="cell" data-execution_count="93">
+<div id="76f268ff" class="cell" data-execution_count="93">
 <div class="sourceCode cell-code" id="cb182"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb182-1"><a href="#cb182-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion <span class="op">=</span> Raptor(<span class="dv">2</span>,<span class="dv">2</span>)</span>
 <span id="cb182-2"><a href="#cb182-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="93">
 <pre><code>Raptor(2, 2)</code></pre>
 </div>
 </div>
-<div id="7aad0333" class="cell" data-execution_count="94">
+<div id="5fdfad78" class="cell" data-execution_count="94">
 <div class="sourceCode cell-code" id="cb184"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb184-1"><a href="#cb184-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(minion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="94">
 <pre><code>&#39;Raptor: Summon a Bloodfen Raptor to fight for you.&#39;</code></pre>
 </div>
 </div>
-<div id="7af2a970" class="cell" data-execution_count="95">
+<div id="e3320657" class="cell" data-execution_count="95">
 <div class="sourceCode cell-code" id="cb186"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb186-1"><a href="#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_symbol()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="95">
 <pre><code>&#39;R&#39;</code></pre>
 </div>
 </div>
-<div id="4ca5ff52" class="cell" data-execution_count="96">
+<div id="933a5496" class="cell" data-execution_count="96">
 <div class="sourceCode cell-code" id="cb188"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb188-1"><a href="#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_name()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="96">
 <pre><code>&#39;Raptor&#39;</code></pre>
 </div>
 </div>
-<div id="4d60f06d" class="cell" data-execution_count="97">
+<div id="92d8e597" class="cell" data-execution_count="97">
 <div class="sourceCode cell-code" id="cb190"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb190-1"><a href="#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="97">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="413e705e" class="cell" data-execution_count="98">
+<div id="09797a17" class="cell" data-execution_count="98">
 <div class="sourceCode cell-code" id="cb192"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb192-1"><a href="#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="98">
 <pre><code>{&#39;damage&#39;: 2}</code></pre>
 </div>
 </div>
-<div id="510b4718" class="cell" data-execution_count="99">
+<div id="c939b02d" class="cell" data-execution_count="99">
 <div class="sourceCode cell-code" id="cb194"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb194-1"><a href="#cb194-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.apply_health(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="c0f291e8" class="cell" data-execution_count="100">
+<div id="0e62ec54" class="cell" data-execution_count="100">
 <div class="sourceCode cell-code" id="cb195"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb195-1"><a href="#cb195-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.get_effect()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="100">
 <pre><code>{&#39;damage&#39;: 4}</code></pre>
 </div>
 </div>
-<div id="f2920bd2" class="cell" data-execution_count="101">
+<div id="555481fe" class="cell" data-execution_count="101">
 <div class="sourceCode cell-code" id="cb197"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb197-1"><a href="#cb197-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minion.is_permanent()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="101">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="8e0ebeb6" class="cell" data-execution_count="102">
+<div id="a44aa58d" class="cell" data-execution_count="102">
 <div class="sourceCode cell-code" id="cb199"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb199-1"><a href="#cb199-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero_friend <span class="op">=</span> Hero(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,CardDeck([Fireball(<span class="dv">8</span>)]), [])</span>
 <span id="cb199-2"><a href="#cb199-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hero_foe <span class="op">=</span> Hero(<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>,CardDeck([Card()]), [Shield()])</span>
 <span id="cb199-3"><a href="#cb199-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> minions_friend <span class="op">=</span> [Minion(<span class="dv">1</span>,<span class="dv">0</span>),Minion(<span class="dv">2</span>,<span class="dv">0</span>),Minion(<span class="dv">1</span>,<span class="dv">2</span>)]</span>
@@ -4201,7 +4201,7 @@ Select this minion’s target out of the given entities. Note that here, the all
 <pre><code>Minion(2, 2)</code></pre>
 </div>
 </div>
-<div id="636a075d" class="cell" data-execution_count="103">
+<div id="a68a75e2" class="cell" data-execution_count="103">
 <div class="sourceCode cell-code" id="cb201"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb201-1"><a href="#cb201-1" aria-hidden="true" tabindex="-1"></a>minion.choose_target(hero_friend, hero_foe, minions_friend, [])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="103">
 <pre><code>Hero(3, 2, 1, CardDeck([Card()]), [Shield()])</code></pre>
@@ -4241,7 +4241,7 @@ Discards the given card from the players hand. The discarded card should be adde
 Follows the instructions for the <code>end turn</code> command in <a href="#tbl-actions" class="quarto-xref">Table 2</a>, excluding the last instruction (saving the game to <code>autosave.txt</code>). Returns the names of the cards played by the enemy hero (in order). If a minion is defeated at any point, it should be removed from the game, and any remaining minions within the respective minion slots should be moved one slot left if able. If the enemy hero is not alive after it has drawn cards, it should not take a turn, and the player should not subsequently update its own status.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="a4d73414" class="cell" data-execution_count="104">
+<div id="75282612" class="cell" data-execution_count="104">
 <div class="sourceCode cell-code" id="cb203"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb203-1"><a href="#cb203-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> deck1 <span class="op">=</span> CardDeck([Shield(),Heal(),Fireball(<span class="dv">3</span>),Heal(),Raptor(<span class="dv">1</span>,<span class="dv">0</span>),Wyrm(<span class="dv">1</span>,<span class="dv">0</span>),Shield(),Heal(),Heal(),Raptor(<span class="dv">1</span>,<span class="dv">0</span>)])</span>
 <span id="cb203-2"><a href="#cb203-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hand1 <span class="op">=</span> [Raptor(<span class="dv">2</span>,<span class="dv">2</span>), Heal(), Shield(),Fireball(<span class="dv">8</span>)]</span>
 <span id="cb203-3"><a href="#cb203-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> player <span class="op">=</span> Hero(<span class="dv">5</span>,<span class="dv">0</span>,<span class="dv">2</span>,deck1,hand1)</span>
@@ -4256,167 +4256,167 @@ Follows the instructions for the <code>end turn</code> command in <a href="#tbl-
 <pre><code>HearthModel(Hero(5, 0, 2, CardDeck([Shield(), Heal(), Fireball(3), Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0)]), [Raptor(2, 2), Heal(), Shield(), Fireball(8)]), [Raptor(1, 0), Wyrm(1, 1)], Hero(10, 0, 3, CardDeck([Heal(), Shield(), Heal(), Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Wyrm(1, 0), Fireball(0), Raptor(1, 0), Shield()]), [Wyrm(1, 2)])</code></pre>
 </div>
 </div>
-<div id="102aee13" class="cell" data-execution_count="105">
+<div id="bdc38f57" class="cell" data-execution_count="105">
 <div class="sourceCode cell-code" id="cb205"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb205-1"><a href="#cb205-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="105">
 <pre><code>&#39;5,0,2;S,H,3,H,R,W,S,H,H,R;R,H,S,8|R,1,0;W,1,1|10,0,3;H,S,H,H,R,W,S,H,H,R;W,0,R,S|W,1,2&#39;</code></pre>
 </div>
 </div>
-<div id="fe939dda" class="cell" data-execution_count="106">
+<div id="0b68cde6" class="cell" data-execution_count="106">
 <div class="sourceCode cell-code" id="cb207"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb207-1"><a href="#cb207-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_player()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="106">
 <pre><code>Hero(5, 0, 2, CardDeck([Shield(), Heal(), Fireball(3), Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0)]), [Raptor(2, 2), Heal(), Shield(), Fireball(8)])</code></pre>
 </div>
 </div>
-<div id="f163e5a5" class="cell" data-execution_count="107">
+<div id="44b82e40" class="cell" data-execution_count="107">
 <div class="sourceCode cell-code" id="cb209"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb209-1"><a href="#cb209-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_enemy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="107">
 <pre><code>Hero(10, 0, 3, CardDeck([Heal(), Shield(), Heal(), Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Wyrm(1, 0), Fireball(0), Raptor(1, 0), Shield()])</code></pre>
 </div>
 </div>
-<div id="d3b9e458" class="cell" data-execution_count="108">
+<div id="365e2ec1" class="cell" data-execution_count="108">
 <div class="sourceCode cell-code" id="cb211"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb211-1"><a href="#cb211-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_player_minions()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="108">
 <pre><code>[Raptor(1, 0), Wyrm(1, 1)]</code></pre>
 </div>
 </div>
-<div id="25919946" class="cell" data-execution_count="109">
+<div id="60c57655" class="cell" data-execution_count="109">
 <div class="sourceCode cell-code" id="cb213"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb213-1"><a href="#cb213-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_enemy_minions()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="109">
 <pre><code>[Wyrm(1, 2)]</code></pre>
 </div>
 </div>
-<div id="4aab453e" class="cell" data-execution_count="110">
+<div id="03f1d6fa" class="cell" data-execution_count="110">
 <div class="sourceCode cell-code" id="cb215"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb215-1"><a href="#cb215-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_won() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="110">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="a27f7d36" class="cell" data-execution_count="111">
+<div id="10fe2443" class="cell" data-execution_count="111">
 <div class="sourceCode cell-code" id="cb217"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb217-1"><a href="#cb217-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_lost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="111">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="c962de0c" class="cell" data-execution_count="112">
+<div id="1c0d063a" class="cell" data-execution_count="112">
 <div class="sourceCode cell-code" id="cb219"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb219-1"><a href="#cb219-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> model.get_player().get_hand()[<span class="dv">3</span>]</span>
 <span id="cb219-2"><a href="#cb219-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="112">
 <pre><code>Fireball(8)</code></pre>
 </div>
 </div>
-<div id="320360eb" class="cell" data-execution_count="113">
+<div id="a8466a39" class="cell" data-execution_count="113">
 <div class="sourceCode cell-code" id="cb221"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb221-1"><a href="#cb221-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.play_card(card, enemy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="113">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="91a9b94b" class="cell" data-execution_count="114">
+<div id="eaf78fba" class="cell" data-execution_count="114">
 <div class="sourceCode cell-code" id="cb223"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb223-1"><a href="#cb223-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="114">
 <pre><code>HearthModel(Hero(5, 0, 2, CardDeck([Shield(), Heal(), Fireball(3), Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0)]), [Raptor(2, 2), Heal(), Shield(), Fireball(8)]), [Raptor(1, 0), Wyrm(1, 1)], Hero(10, 0, 3, CardDeck([Heal(), Shield(), Heal(), Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Wyrm(1, 0), Fireball(0), Raptor(1, 0), Shield()]), [Wyrm(1, 2)])</code></pre>
 </div>
 </div>
-<div id="bf6f58fc" class="cell" data-execution_count="115">
+<div id="5f00e8ac" class="cell" data-execution_count="115">
 <div class="sourceCode cell-code" id="cb225"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb225-1"><a href="#cb225-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> model.get_player().get_hand()[<span class="dv">2</span>]</span>
 <span id="cb225-2"><a href="#cb225-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="115">
 <pre><code>Shield()</code></pre>
 </div>
 </div>
-<div id="40b2c469" class="cell" data-execution_count="116">
+<div id="aff729d4" class="cell" data-execution_count="116">
 <div class="sourceCode cell-code" id="cb227"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb227-1"><a href="#cb227-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.play_card(card, player) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="116">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="3850d91a" class="cell" data-execution_count="117">
+<div id="df078ca3" class="cell" data-execution_count="117">
 <div class="sourceCode cell-code" id="cb229"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb229-1"><a href="#cb229-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_player().get_energy() <span class="co"># Note that repr below depicts energy capacity (unchanged)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="117">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="4a7e9f3e" class="cell" data-execution_count="118">
+<div id="a627812d" class="cell" data-execution_count="118">
 <div class="sourceCode cell-code" id="cb231"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb231-1"><a href="#cb231-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="118">
 <pre><code>HearthModel(Hero(5, 5, 2, CardDeck([Shield(), Heal(), Fireball(3), Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0)]), [Raptor(2, 2), Heal(), Fireball(8)]), [Raptor(1, 0), Wyrm(1, 1)], Hero(10, 0, 3, CardDeck([Heal(), Shield(), Heal(), Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Wyrm(1, 0), Fireball(0), Raptor(1, 0), Shield()]), [Wyrm(1, 2)])</code></pre>
 </div>
 </div>
-<div id="f8bb2c32" class="cell" data-execution_count="119">
+<div id="9802bfaf" class="cell" data-execution_count="119">
 <div class="sourceCode cell-code" id="cb233"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb233-1"><a href="#cb233-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card <span class="op">=</span> model.get_player().get_hand()[<span class="dv">0</span>]</span>
 <span id="cb233-2"><a href="#cb233-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> card </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="119">
 <pre><code>Raptor(2, 2)</code></pre>
 </div>
 </div>
-<div id="8ec499df" class="cell" data-execution_count="120">
+<div id="48149113" class="cell" data-execution_count="120">
 <div class="sourceCode cell-code" id="cb235"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb235-1"><a href="#cb235-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.discard_card(card)</span>
 <span id="cb235-2"><a href="#cb235-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="120">
 <pre><code>HearthModel(Hero(5, 5, 2, CardDeck([Shield(), Heal(), Fireball(3), Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0), Raptor(2, 2)]), [Heal(), Fireball(8)]), [Raptor(1, 0), Wyrm(1, 1)], Hero(10, 0, 3, CardDeck([Heal(), Shield(), Heal(), Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Wyrm(1, 0), Fireball(0), Raptor(1, 0), Shield()]), [Wyrm(1, 2)])</code></pre>
 </div>
 </div>
-<div id="f68cfaaf" class="cell" data-execution_count="121">
+<div id="16af39aa" class="cell" data-execution_count="121">
 <div class="sourceCode cell-code" id="cb237"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb237-1"><a href="#cb237-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.end_turn()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="121">
 <pre><code>[&#39;Wyrm&#39;, &#39;Raptor&#39;]</code></pre>
 </div>
 </div>
-<div id="949a6b5d" class="cell" data-execution_count="122">
+<div id="d3da0606" class="cell" data-execution_count="122">
 <div class="sourceCode cell-code" id="cb239"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb239-1"><a href="#cb239-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="122">
 <pre><code>HearthModel(Hero(5, 5, 3, CardDeck([Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0), Raptor(2, 2)]), [Heal(), Fireball(9), Shield(), Heal(), Fireball(3)]), [Raptor(2, 0), Wyrm(1, 1)], Hero(10, 0, 4, CardDeck([Shield(), Heal(), Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Fireball(1), Shield(), Heal()]), [Wyrm(2, 2), Wyrm(2, 1), Raptor(1, 0)])</code></pre>
 </div>
 </div>
-<div id="1ff92b6e" class="cell" data-execution_count="123">
+<div id="83152a21" class="cell" data-execution_count="123">
 <div class="sourceCode cell-code" id="cb241"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb241-1"><a href="#cb241-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.end_turn()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="123">
 <pre><code>[&#39;Fireball&#39;, &#39;Shield&#39;, &#39;Shield&#39;]</code></pre>
 </div>
 </div>
-<div id="5332b3c1" class="cell" data-execution_count="124">
+<div id="8e033e3a" class="cell" data-execution_count="124">
 <div class="sourceCode cell-code" id="cb243"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb243-1"><a href="#cb243-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="124">
 <pre><code>HearthModel(Hero(5, 0, 4, CardDeck([Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0), Raptor(2, 2)]), [Heal(), Fireball(10), Shield(), Heal(), Fireball(4)]), [Wyrm(2, 2)], Hero(10, 10, 5, CardDeck([Heal(), Raptor(1, 2), Wyrm(1, 3), Shield(), Heal(), Heal(), Raptor(2, 2)]), [Heal(), Heal()]), [Wyrm(3, 1), Wyrm(2, 1), Raptor(2, 1)])</code></pre>
 </div>
 </div>
-<div id="89131328" class="cell" data-execution_count="125">
+<div id="ec8311a9" class="cell" data-execution_count="125">
 <div class="sourceCode cell-code" id="cb245"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb245-1"><a href="#cb245-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.end_turn()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="125">
 <pre><code>[&#39;Heal&#39;, &#39;Heal&#39;, &#39;Heal&#39;]</code></pre>
 </div>
 </div>
-<div id="3effe53b" class="cell" data-execution_count="126">
+<div id="09d807ec" class="cell" data-execution_count="126">
 <div class="sourceCode cell-code" id="cb247"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb247-1"><a href="#cb247-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="126">
 <pre><code>HearthModel(Hero(5, 0, 5, CardDeck([Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0), Raptor(2, 2)]), [Heal(), Fireball(11), Shield(), Heal(), Fireball(5)]), [Wyrm(3, 0)], Hero(16, 10, 6, CardDeck([Shield(), Heal(), Heal(), Raptor(2, 2)]), [Raptor(1, 2), Wyrm(1, 3)]), [Wyrm(3, 1), Wyrm(3, 2), Raptor(3, 2)])</code></pre>
 </div>
 </div>
-<div id="2253a490" class="cell" data-execution_count="127">
+<div id="00d2273c" class="cell" data-execution_count="127">
 <div class="sourceCode cell-code" id="cb249"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb249-1"><a href="#cb249-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.end_turn()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="127">
 <pre><code>[&#39;Raptor&#39;, &#39;Wyrm&#39;, &#39;Shield&#39;, &#39;Heal&#39;]</code></pre>
 </div>
 </div>
-<div id="79ee8323" class="cell" data-execution_count="128">
+<div id="7e26b469" class="cell" data-execution_count="128">
 <div class="sourceCode cell-code" id="cb251"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb251-1"><a href="#cb251-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="128">
 <pre><code>HearthModel(Hero(5, 0, 6, CardDeck([Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0), Raptor(2, 2)]), [Heal(), Fireball(12), Shield(), Heal(), Fireball(6)]), [], Hero(18, 15, 7, CardDeck([Raptor(2, 2)]), [Heal()]), [Wyrm(3, 1), Wyrm(3, 2), Raptor(3, 2), Raptor(3, 4), Wyrm(2, 4)])</code></pre>
 </div>
 </div>
-<div id="ddd866a3" class="cell" data-execution_count="129">
+<div id="e24f22ff" class="cell" data-execution_count="129">
 <div class="sourceCode cell-code" id="cb253"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb253-1"><a href="#cb253-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.end_turn() <span class="co"># Enemy draws last of their cards </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="129">
 <pre><code>[]</code></pre>
 </div>
 </div>
-<div id="bf1635bb" class="cell" data-execution_count="130">
+<div id="0753a1e9" class="cell" data-execution_count="130">
 <div class="sourceCode cell-code" id="cb255"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb255-1"><a href="#cb255-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_won()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="130">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="800567d0" class="cell" data-execution_count="131">
+<div id="e7e53053" class="cell" data-execution_count="131">
 <div class="sourceCode cell-code" id="cb257"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb257-1"><a href="#cb257-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="131">
 <pre><code>HearthModel(Hero(5, 0, 6, CardDeck([Heal(), Raptor(1, 0), Wyrm(1, 0), Shield(), Heal(), Heal(), Raptor(1, 0), Raptor(2, 2)]), [Heal(), Fireball(12), Shield(), Heal(), Fireball(6)]), [], Hero(18, 15, 8, CardDeck([]), [Heal(), Raptor(2, 2)]), [Wyrm(3, 1), Wyrm(3, 2), Raptor(3, 2), Raptor(3, 4), Wyrm(2, 4)])</code></pre>
@@ -4426,7 +4426,7 @@ Follows the instructions for the <code>end turn</code> command in <a href="#tbl-
 </section>
 <section id="controller" class="level3">
 <h3 class="anchored" data-anchor-id="controller">Controller</h3>
-<p>The controller is a single class, <code>Hearthstone()</code>, which you must implement according to this section. You will also implement the <code>play_game</code> function to construct the controller within this section. Unlike with the model, there is no recommended task completion order in this section. It will likely be helpful to work on certain tasks in parallel to implement features. Please refer to the <code>gameplay/</code> folder provided with this assignment for examples of intended controller behavior. Note that for all examples, the file initially loaded is <code>levels/level1.txt</code>. Note that examples may appear to have alignment issues if your text editor does not enforce uniform character widths, this has no functional impact on your assignment (you are not implementing the view class).</p>
+<p>The controller is a single class, <code>Hearthstone()</code>, which you must implement according to this section. You will also implement the <code>play_game</code> function to construct the controller within this section. Unlike with the model, there is no recommended task completion order in this section. It will likely be helpful to work on certain tasks in parallel to implement features. Please refer to the <code>gameplay/</code> folder provided with this assignment for examples of intended controller behavior. Note that for all examples, the file initially loaded is <code>levels/deck1.txt</code>. Note that examples may appear to have alignment issues if your text editor does not enforce uniform character widths, this has no functional impact on your assignment (you are not implementing the view class).</p>
 <section id="task-hearthstone" class="level4">
 <h4 class="anchored" data-anchor-id="task-hearthstone">Task 12 <code>Hearthstone()</code></h4>
 <p><code>Hearthstone()</code> is the controller class for the overall game. The controller is responsible for creating and maintaining instances of the model and view classes, handling player input, and facilitating communication between the model and view classes.</p>
@@ -4480,7 +4480,7 @@ Conducts a game of Hearthstone from start to finish, following the <a href="#gam
 <!-- 
 [Example:]{.underline}
 
-::: {#6c73d5ea .cell execution_count=132}
+::: {#ecedea43 .cell execution_count=132}
 ``` {.python .cell-code}
 >>> 
 ```
@@ -4613,7 +4613,7 @@ Note
 <p>Please read the section in the course profile about plagiarism. You are encouraged to complete <em>both</em> parts A and B of the <a href="https://web.library.uq.edu.au/library-services/it/learnuq-blackboard-help/academic-integrity-modules">academic integrity modules</a> <em>before</em> starting this assignment. Submitted assignments will be electronically checked for potential cases of plagiarism.</p>
 <!-- 
 
-::: {#2f0e6b41 .cell execution_count=133}
+::: {#cf4a12a8 .cell execution_count=133}
 ``` {.python .cell-code}
 >>> pass
 ```
