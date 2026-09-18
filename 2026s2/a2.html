@@ -3497,7 +3497,7 @@ Returns the identifier that represents this item.</li>
 Returns a string which could be copied and pasted into a REPL to construct a new instance identical to self.</li>
 <li><code>get_value(self) -&gt; int</code><br>
 Returns this item’s value.</li>
-<li><code>recipes(self) -&gt; dict[str, str]</code><br>
+<li><code>get_recipes(self) -&gt; dict[str, str]</code><br>
 Returns the valid recipes for this item.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -3514,26 +3514,26 @@ Tip
 </div>
 </div>
 <p><u>Example:</u></p>
-<div id="c36a6894" class="cell" data-execution_count="2">
+<div id="18842b9d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing <span class="op">=</span> Item()</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>Item()</code></pre>
 </div>
 </div>
-<div id="7068001d" class="cell" data-execution_count="3">
+<div id="b1851ba8" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(thing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>&#39;T&#39;</code></pre>
 </div>
 </div>
-<div id="13623704" class="cell" data-execution_count="4">
+<div id="b3230508" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_value()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>0</code></pre>
 </div>
 </div>
-<div id="85b3935e" class="cell" data-execution_count="5">
+<div id="c85cd57e" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_recipes()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>{}</code></pre>
@@ -3544,26 +3544,26 @@ Tip
 <h4 class="anchored" data-anchor-id="task-copperitem">Task 2 <code>Copper(Item)</code></h4>
 <p>A metal essential in the construction of electronics. Copper is represented by the symbol <code>C</code>, has a value of <code>2</code>, and can be combined with iron to produce a processor.</p>
 <p><u>Example:</u></p>
-<div id="35168cd6" class="cell" data-execution_count="6">
+<div id="81a98b61" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing <span class="op">=</span> Copper()</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="e544daec" class="cell" data-execution_count="7">
+<div id="2080d704" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(thing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>&#39;C&#39;</code></pre>
 </div>
 </div>
-<div id="c0eac901" class="cell" data-execution_count="8">
+<div id="40de9b8a" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_value()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="762873d8" class="cell" data-execution_count="9">
+<div id="7287aee4" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_recipes()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>{&#39;I&#39;: &#39;P&#39;}</code></pre>
@@ -3574,26 +3574,26 @@ Tip
 <h4 class="anchored" data-anchor-id="task-ironitem">Task 3 <code>Iron(Item)</code></h4>
 <p>An abundant metal required to make casings. Iron is represented by the symbol <code>I</code>, and has a value of <code>1</code>. Iron can be combined with copper to produce a processor, or can be further combined with a processor to produce a satellite.</p>
 <p><u>Example:</u></p>
-<div id="8cc17b79" class="cell" data-execution_count="10">
+<div id="b7af5cf9" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing <span class="op">=</span> Iron()</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="62e5f5c6" class="cell" data-execution_count="11">
+<div id="744b4cbf" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(thing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>&#39;I&#39;</code></pre>
 </div>
 </div>
-<div id="443e2f39" class="cell" data-execution_count="12">
+<div id="9e77cc18" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_value()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="898bce73" class="cell" data-execution_count="13">
+<div id="056a361c" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_recipes()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>{&#39;C&#39;: &#39;P&#39;, &#39;P&#39;: &#39;S&#39;}</code></pre>
@@ -3604,26 +3604,26 @@ Tip
 <h4 class="anchored" data-anchor-id="task-processoritem">Task 4 <code>Processor(Item)</code></h4>
 <p>A valuable piece of hardware. Processors are represented by the symbol <code>P</code>, have a value of <code>5</code>, and can be combined with iron to produce a satellite.</p>
 <p><u>Example:</u></p>
-<div id="cc8341df" class="cell" data-execution_count="14">
+<div id="641798ca" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing <span class="op">=</span> Processor()</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>Processor()</code></pre>
 </div>
 </div>
-<div id="7fcdb4b4" class="cell" data-execution_count="15">
+<div id="d2e69651" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(thing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>&#39;P&#39;</code></pre>
 </div>
 </div>
-<div id="d28c130b" class="cell" data-execution_count="16">
+<div id="c8911d86" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_value()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>5</code></pre>
 </div>
 </div>
-<div id="baec89b8" class="cell" data-execution_count="17">
+<div id="2c8e21b0" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_recipes()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>{&#39;I&#39;: &#39;S&#39;}</code></pre>
@@ -3634,26 +3634,26 @@ Tip
 <h4 class="anchored" data-anchor-id="task-satelliteitem">Task 5 <code>Satellite(Item)</code></h4>
 <p>People pay a lot of money to get satellites into space. Satellites are represented by the symbol <code>S</code> and have a value of <code>10</code>. Satellites are the end goal of production and thus cannot be combined with any other item.</p>
 <p><u>Example:</u></p>
-<div id="05e3d8b0" class="cell" data-execution_count="18">
+<div id="a41444e8" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing <span class="op">=</span> Satellite()</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>Satellite()</code></pre>
 </div>
 </div>
-<div id="bf0bd194" class="cell" data-execution_count="19">
+<div id="983aaca0" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(thing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <pre><code>&#39;S&#39;</code></pre>
 </div>
 </div>
-<div id="a5f2bc83" class="cell" data-execution_count="20">
+<div id="925b1321" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_value()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>10</code></pre>
 </div>
 </div>
-<div id="be3682b8" class="cell" data-execution_count="21">
+<div id="9feedd0f" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> thing.get_recipes()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>{}</code></pre>
@@ -3699,88 +3699,88 @@ Removes and returns the item this machine is holding, or returns <code>None</cod
 Performs this machine’s action.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="b91a9667" class="cell" data-execution_count="22">
+<div id="bea2d44d" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine <span class="op">=</span> Machine(<span class="va">None</span>)</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>Machine(None)</code></pre>
 </div>
 </div>
-<div id="b2527671" class="cell" data-execution_count="23">
+<div id="aeb81c96" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(machine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>&#39;M&#39;</code></pre>
 </div>
 </div>
-<div id="3d310900" class="cell" data-execution_count="24">
+<div id="1ad74011" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.tick() <span class="co"># Does nothing</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>Machine(None)</code></pre>
 </div>
 </div>
-<div id="cbdf34bc" class="cell" data-execution_count="25">
+<div id="eb3a5365" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine <span class="op">=</span> Machine(Copper())</span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>Machine(Copper())</code></pre>
 </div>
 </div>
-<div id="c6f92c46" class="cell" data-execution_count="26">
+<div id="4ed9d596" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(machine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="26">
 <pre><code>&#39;C&#39;</code></pre>
 </div>
 </div>
-<div id="d9956810" class="cell" data-execution_count="27">
+<div id="915aab7c" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_type()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="27">
 <pre><code>&#39;M&#39;</code></pre>
 </div>
 </div>
-<div id="c50ab5ef" class="cell" data-execution_count="28">
+<div id="a8417c12" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>0</code></pre>
 </div>
 </div>
-<div id="e07f1e04" class="cell" data-execution_count="29">
+<div id="caa239cb" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="ac553cd6" class="cell" data-execution_count="30">
+<div id="b7f7bb50" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.add_item(Iron()) <span class="co"># Already occupied</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="30">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="44e14fe2" class="cell" data-execution_count="31">
+<div id="eb635cef" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="31">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="187c4736" class="cell" data-execution_count="32">
+<div id="972bd962" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.remove_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="32">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="e453c5f5" class="cell" data-execution_count="33">
+<div id="051c30d0" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="febe7e6d" class="cell" data-execution_count="34">
+<div id="65039631" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.remove_item() <span class="co"># Nothing to remove</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="a0c16a22" class="cell" data-execution_count="35">
+<div id="0530d963" class="cell" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.add_item(Iron())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="35">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="34f9f455" class="cell" data-execution_count="36">
+<div id="b82321eb" class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="36">
 <pre><code>Iron()</code></pre>
@@ -3792,75 +3792,75 @@ Performs this machine’s action.</li>
 <p>An <code>Assembler</code> is a machine that combines items based on their recipes. Assemblers are represented by the symbol <code>A</code> and have cost <code>5</code>.</p>
 <p>When adding an item to an assembler already holding an item, it does not automatically fail. Instead, if the incoming item is a valid recipe input for the held item, the held item is replaced with the corresponding recipe output. This combination is done when an item is added to the assembler, and so these machines don’t have a regular action.</p>
 <p><u>Example:</u></p>
-<div id="86bdc333" class="cell" data-execution_count="37">
+<div id="bc4c8c06" class="cell" data-execution_count="37">
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine <span class="op">=</span> Assembler(<span class="va">None</span>)</span>
 <span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="37">
 <pre><code>Assembler(None)</code></pre>
 </div>
 </div>
-<div id="ab393397" class="cell" data-execution_count="38">
+<div id="0b001be1" class="cell" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.tick() <span class="co"># Does nothing</span></span>
 <span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="38">
 <pre><code>Assembler(None)</code></pre>
 </div>
 </div>
-<div id="4bb56a3d" class="cell" data-execution_count="39">
+<div id="915df7a2" class="cell" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(machine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="39">
 <pre><code>&#39;A&#39;</code></pre>
 </div>
 </div>
-<div id="3d8322d2" class="cell" data-execution_count="40">
+<div id="d25f096e" class="cell" data-execution_count="40">
 <div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_type()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="40">
 <pre><code>&#39;A&#39;</code></pre>
 </div>
 </div>
-<div id="e05f89eb" class="cell" data-execution_count="41">
+<div id="87cae6d0" class="cell" data-execution_count="41">
 <div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="41">
 <pre><code>5</code></pre>
 </div>
 </div>
-<div id="66fb1964" class="cell" data-execution_count="42">
+<div id="4914a47e" class="cell" data-execution_count="42">
 <div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.add_item(Iron())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="42">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="b81ea214" class="cell" data-execution_count="43">
+<div id="64954987" class="cell" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="43">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="4a323130" class="cell" data-execution_count="44">
+<div id="f91e6f3c" class="cell" data-execution_count="44">
 <div class="sourceCode cell-code" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.add_item(Iron()) <span class="co"># Invalid Recipe</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="44">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="8cb7472b" class="cell" data-execution_count="45">
+<div id="708f96ae" class="cell" data-execution_count="45">
 <div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="45">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="cd85faee" class="cell" data-execution_count="46">
+<div id="eb8d81c3" class="cell" data-execution_count="46">
 <div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.add_item(Copper())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="46">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="cc3cda8b" class="cell" data-execution_count="47">
+<div id="25753a82" class="cell" data-execution_count="47">
 <div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="47">
 <pre><code>Processor()</code></pre>
 </div>
 </div>
-<div id="17f472da" class="cell" data-execution_count="48">
+<div id="531a55d1" class="cell" data-execution_count="48">
 <div class="sourceCode cell-code" id="cb91"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(machine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="48">
 <pre><code>&#39;P&#39;</code></pre>
@@ -3879,82 +3879,82 @@ Instantiate a new drill holding the given item, or holding no item if <code>held
 Returns the identifier that represents the type of item spawned by this drill.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="cf4c8dcb" class="cell" data-execution_count="49">
+<div id="7a8e3d16" class="cell" data-execution_count="49">
 <div class="sourceCode cell-code" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine <span class="op">=</span> Drill(Iron(), <span class="st">&#39;P&#39;</span>)</span>
 <span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="49">
 <pre><code>Drill(Iron(), &#39;P&#39;)</code></pre>
 </div>
 </div>
-<div id="f35c7a79" class="cell" data-execution_count="50">
+<div id="d09384fb" class="cell" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(machine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="50">
 <pre><code>&#39;I&#39;</code></pre>
 </div>
 </div>
-<div id="7cae1531" class="cell" data-execution_count="51">
+<div id="987d38b4" class="cell" data-execution_count="51">
 <div class="sourceCode cell-code" id="cb97"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_type()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="51">
 <pre><code>&#39;D&#39;</code></pre>
 </div>
 </div>
-<div id="dd9dee70" class="cell" data-execution_count="52">
+<div id="6d1ca823" class="cell" data-execution_count="52">
 <div class="sourceCode cell-code" id="cb99"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="52">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="10c1c404" class="cell" data-execution_count="53">
+<div id="520b58bb" class="cell" data-execution_count="53">
 <div class="sourceCode cell-code" id="cb101"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_spawn_type()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="53">
 <pre><code>&#39;P&#39;</code></pre>
 </div>
 </div>
-<div id="6a2975a7" class="cell" data-execution_count="54">
+<div id="e1104a14" class="cell" data-execution_count="54">
 <div class="sourceCode cell-code" id="cb103"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="54">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="f4c01b87" class="cell" data-execution_count="55">
+<div id="f72a319c" class="cell" data-execution_count="55">
 <div class="sourceCode cell-code" id="cb105"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.tick() <span class="co"># Machine full.</span></span>
 <span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="55">
 <pre><code>Drill(Iron(), &#39;P&#39;)</code></pre>
 </div>
 </div>
-<div id="3464beb3" class="cell" data-execution_count="56">
+<div id="a0b5ff1a" class="cell" data-execution_count="56">
 <div class="sourceCode cell-code" id="cb107"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="56">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="25d6fa15" class="cell" data-execution_count="57">
+<div id="9b53243b" class="cell" data-execution_count="57">
 <div class="sourceCode cell-code" id="cb109"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.remove_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="57">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="fea8117b" class="cell" data-execution_count="58">
+<div id="212ada1c" class="cell" data-execution_count="58">
 <div class="sourceCode cell-code" id="cb111"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="0e93234a" class="cell" data-execution_count="59">
+<div id="c6bbf92a" class="cell" data-execution_count="59">
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.add_item(Processor())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="59">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="859e8f3a" class="cell" data-execution_count="60">
+<div id="8c89da8c" class="cell" data-execution_count="60">
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="d579e8f1" class="cell" data-execution_count="61">
+<div id="63aad5ac" class="cell" data-execution_count="61">
 <div class="sourceCode cell-code" id="cb115"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.tick()</span>
 <span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="61">
 <pre><code>Drill(Processor(), &#39;P&#39;)</code></pre>
 </div>
 </div>
-<div id="8bf7930e" class="cell" data-execution_count="62">
+<div id="437e9fa3" class="cell" data-execution_count="62">
 <div class="sourceCode cell-code" id="cb117"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="62">
 <pre><code>Processor()</code></pre>
@@ -3975,83 +3975,83 @@ Returns how many funds this rocket currently has.</li>
 Returns this rocket’s funds, resetting the rocket to 0 funds.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="a4433a0c" class="cell" data-execution_count="63">
+<div id="139ac175" class="cell" data-execution_count="63">
 <div class="sourceCode cell-code" id="cb119"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine <span class="op">=</span> Rocket(Copper(), <span class="dv">67</span>)</span>
 <span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="63">
 <pre><code>Rocket(Copper(), 67)</code></pre>
 </div>
 </div>
-<div id="e8eaf9fb" class="cell" data-execution_count="64">
+<div id="d29214c7" class="cell" data-execution_count="64">
 <div class="sourceCode cell-code" id="cb121"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(machine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="64">
 <pre><code>&#39;C&#39;</code></pre>
 </div>
 </div>
-<div id="ed6cf7ed" class="cell" data-execution_count="65">
+<div id="9224ac49" class="cell" data-execution_count="65">
 <div class="sourceCode cell-code" id="cb123"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_type()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="65">
 <pre><code>&#39;R&#39;</code></pre>
 </div>
 </div>
-<div id="2f17f624" class="cell" data-execution_count="66">
+<div id="fca9d963" class="cell" data-execution_count="66">
 <div class="sourceCode cell-code" id="cb125"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="66">
 <pre><code>20</code></pre>
 </div>
 </div>
-<div id="6e34f107" class="cell" data-execution_count="67">
+<div id="d4261739" class="cell" data-execution_count="67">
 <div class="sourceCode cell-code" id="cb127"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="67">
 <pre><code>67</code></pre>
 </div>
 </div>
-<div id="ffc87bbc" class="cell" data-execution_count="68">
+<div id="114aabbc" class="cell" data-execution_count="68">
 <div class="sourceCode cell-code" id="cb129"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> to_yeet <span class="op">=</span> machine.check_item()</span>
 <span id="cb129-2"><a href="#cb129-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> to_yeet.get_value()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="68">
 <pre><code>2</code></pre>
 </div>
 </div>
-<div id="927828e3" class="cell" data-execution_count="69">
+<div id="ec3acc5e" class="cell" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb131"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.tick()</span>
 <span id="cb131-2"><a href="#cb131-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="69">
 <pre><code>Rocket(None, 69)</code></pre>
 </div>
 </div>
-<div id="36d8c76d" class="cell" data-execution_count="70">
+<div id="d95117c7" class="cell" data-execution_count="70">
 <div class="sourceCode cell-code" id="cb133"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="1da9765d" class="cell" data-execution_count="71">
+<div id="8628134a" class="cell" data-execution_count="71">
 <div class="sourceCode cell-code" id="cb134"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="71">
 <pre><code>69</code></pre>
 </div>
 </div>
-<div id="44af7fe9" class="cell" data-execution_count="72">
+<div id="c32c122f" class="cell" data-execution_count="72">
 <div class="sourceCode cell-code" id="cb136"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.tick() <span class="co"># Nothing to launch</span></span>
 <span id="cb136-2"><a href="#cb136-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="72">
 <pre><code>Rocket(None, 69)</code></pre>
 </div>
 </div>
-<div id="7cacf68a" class="cell" data-execution_count="73">
+<div id="9d7b140b" class="cell" data-execution_count="73">
 <div class="sourceCode cell-code" id="cb138"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="61fc1ea7" class="cell" data-execution_count="74">
+<div id="1870a0e0" class="cell" data-execution_count="74">
 <div class="sourceCode cell-code" id="cb139"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="74">
 <pre><code>69</code></pre>
 </div>
 </div>
-<div id="a402c903" class="cell" data-execution_count="75">
+<div id="69f324cf" class="cell" data-execution_count="75">
 <div class="sourceCode cell-code" id="cb141"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.collect_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="75">
 <pre><code>69</code></pre>
 </div>
 </div>
-<div id="6bcb4b4e" class="cell" data-execution_count="76">
+<div id="84ed4910" class="cell" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb143"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machine.check_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="76">
 <pre><code>0</code></pre>
@@ -4076,162 +4076,162 @@ Returns this belt’s destination machine, or <code>None</code> if it does not h
 Sets this belt’s destination to the given machine, or removes the belt’s destination if <code>new_destination</code> is <code>None</code>.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="47b47bf5" class="cell" data-execution_count="77">
+<div id="2011951a" class="cell" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb145"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter <span class="op">=</span> Assembler(Copper())</span>
 <span id="cb145-2"><a href="#cb145-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="77">
 <pre><code>Assembler(Copper())</code></pre>
 </div>
 </div>
-<div id="51466ce6" class="cell" data-execution_count="78">
+<div id="21fbbf23" class="cell" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb147"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yoinker <span class="op">=</span> Assembler(<span class="va">None</span>)</span>
 <span id="cb147-2"><a href="#cb147-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yoinker</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="78">
 <pre><code>Assembler(None)</code></pre>
 </div>
 </div>
-<div id="85caa406" class="cell" data-execution_count="79">
+<div id="4ac155dc" class="cell" data-execution_count="79">
 <div class="sourceCode cell-code" id="cb149"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb149-1"><a href="#cb149-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt <span class="op">=</span> Belt(<span class="va">None</span>, yeeter, yoinker)</span>
 <span id="cb149-2"><a href="#cb149-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="79">
 <pre><code>Belt(None, Assembler(Copper()), Assembler(None))</code></pre>
 </div>
 </div>
-<div id="d93a219c" class="cell" data-execution_count="80">
+<div id="afbb1843" class="cell" data-execution_count="80">
 <div class="sourceCode cell-code" id="cb151"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb151-1"><a href="#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(belt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="80">
 <pre><code>&#39;B&#39;</code></pre>
 </div>
 </div>
-<div id="3c00c157" class="cell" data-execution_count="81">
+<div id="116b3550" class="cell" data-execution_count="81">
 <div class="sourceCode cell-code" id="cb153"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb153-1"><a href="#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.get_type()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="81">
 <pre><code>&#39;B&#39;</code></pre>
 </div>
 </div>
-<div id="48d581cc" class="cell" data-execution_count="82">
+<div id="ca1ba6da" class="cell" data-execution_count="82">
 <div class="sourceCode cell-code" id="cb155"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb155-1"><a href="#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.get_cost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="82">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="4ff9df2c" class="cell" data-execution_count="83">
+<div id="f1c9de37" class="cell" data-execution_count="83">
 <div class="sourceCode cell-code" id="cb157"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.get_source()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="83">
 <pre><code>Assembler(Copper())</code></pre>
 </div>
 </div>
-<div id="8ad54f6c" class="cell" data-execution_count="84">
+<div id="89e87d44" class="cell" data-execution_count="84">
 <div class="sourceCode cell-code" id="cb159"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb159-1"><a href="#cb159-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.get_destination()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="84">
 <pre><code>Assembler(None)</code></pre>
 </div>
 </div>
-<div id="a49f91c9" class="cell" data-execution_count="85">
+<div id="aa74ab10" class="cell" data-execution_count="85">
 <div class="sourceCode cell-code" id="cb161"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb161-1"><a href="#cb161-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.set_destination(<span class="va">None</span>)</span>
 <span id="cb161-2"><a href="#cb161-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="85">
 <pre><code>Belt(None, Assembler(Copper()), None)</code></pre>
 </div>
 </div>
-<div id="62062694" class="cell" data-execution_count="86">
+<div id="bdf27563" class="cell" data-execution_count="86">
 <div class="sourceCode cell-code" id="cb163"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb163-1"><a href="#cb163-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.get_destination()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="d20209f7" class="cell" data-execution_count="87">
+<div id="3b2ac1d7" class="cell" data-execution_count="87">
 <div class="sourceCode cell-code" id="cb164"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="87">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="8082fe66" class="cell" data-execution_count="88">
+<div id="8bfebd42" class="cell" data-execution_count="88">
 <div class="sourceCode cell-code" id="cb166"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="ab4f32fc" class="cell" data-execution_count="89">
+<div id="c3137ff5" class="cell" data-execution_count="89">
 <div class="sourceCode cell-code" id="cb167"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb167-1"><a href="#cb167-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.tick()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="fca38931" class="cell" data-execution_count="90">
+<div id="077cdae4" class="cell" data-execution_count="90">
 <div class="sourceCode cell-code" id="cb168"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="6d413436" class="cell" data-execution_count="91">
+<div id="ce20a6da" class="cell" data-execution_count="91">
 <div class="sourceCode cell-code" id="cb169"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb169-1"><a href="#cb169-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="91">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="0ff28884" class="cell" data-execution_count="92">
+<div id="dbb3265b" class="cell" data-execution_count="92">
 <div class="sourceCode cell-code" id="cb171"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb171-1"><a href="#cb171-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.add_item(Iron())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="92">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="f5b7ffe3" class="cell" data-execution_count="93">
+<div id="d1a8abb5" class="cell" data-execution_count="93">
 <div class="sourceCode cell-code" id="cb173"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb173-1"><a href="#cb173-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="93">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="efbc7009" class="cell" data-execution_count="94">
+<div id="a373f9a5" class="cell" data-execution_count="94">
 <div class="sourceCode cell-code" id="cb175"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb175-1"><a href="#cb175-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="94">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="e79c9ade" class="cell" data-execution_count="95">
+<div id="659b779a" class="cell" data-execution_count="95">
 <div class="sourceCode cell-code" id="cb177"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb177-1"><a href="#cb177-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.tick()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="abe151d2" class="cell" data-execution_count="96">
+<div id="54b0d8cc" class="cell" data-execution_count="96">
 <div class="sourceCode cell-code" id="cb178"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="96">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="a8282295" class="cell" data-execution_count="97">
+<div id="1b2bf1f5" class="cell" data-execution_count="97">
 <div class="sourceCode cell-code" id="cb180"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="97">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="87e638bb" class="cell" data-execution_count="98">
+<div id="714eda46" class="cell" data-execution_count="98">
 <div class="sourceCode cell-code" id="cb182"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb182-1"><a href="#cb182-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.set_destination(yoinker)</span>
 <span id="cb182-2"><a href="#cb182-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="98">
 <pre><code>Belt(Copper(), Assembler(Iron()), Assembler(None))</code></pre>
 </div>
 </div>
-<div id="651293eb" class="cell" data-execution_count="99">
+<div id="1ee973ac" class="cell" data-execution_count="99">
 <div class="sourceCode cell-code" id="cb184"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb184-1"><a href="#cb184-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.get_destination()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="99">
 <pre><code>Assembler(None)</code></pre>
 </div>
 </div>
-<div id="13200a21" class="cell" data-execution_count="100">
+<div id="2e2ed192" class="cell" data-execution_count="100">
 <div class="sourceCode cell-code" id="cb186"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb186-1"><a href="#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="100">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="296933de" class="cell" data-execution_count="101">
+<div id="83fb7700" class="cell" data-execution_count="101">
 <div class="sourceCode cell-code" id="cb188"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb188-1"><a href="#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="101">
 <pre><code>Copper()</code></pre>
 </div>
 </div>
-<div id="460bb2dc" class="cell" data-execution_count="102">
+<div id="a403be6f" class="cell" data-execution_count="102">
 <div class="sourceCode cell-code" id="cb190"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb190-1"><a href="#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yoinker.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="26595492" class="cell" data-execution_count="103">
+<div id="12d7b73b" class="cell" data-execution_count="103">
 <div class="sourceCode cell-code" id="cb191"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb191-1"><a href="#cb191-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.tick()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="f0dedb45" class="cell" data-execution_count="104">
+<div id="ad7f3811" class="cell" data-execution_count="104">
 <div class="sourceCode cell-code" id="cb192"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb192-1"><a href="#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yeeter.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="10031587" class="cell" data-execution_count="105">
+<div id="0d4bf678" class="cell" data-execution_count="105">
 <div class="sourceCode cell-code" id="cb193"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb193-1"><a href="#cb193-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> belt.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="105">
 <pre><code>Iron()</code></pre>
 </div>
 </div>
-<div id="54c6f661" class="cell" data-execution_count="106">
+<div id="d90f1659" class="cell" data-execution_count="106">
 <div class="sourceCode cell-code" id="cb195"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb195-1"><a href="#cb195-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> yoinker.check_item()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="106">
 <pre><code>Copper()</code></pre>
@@ -4271,7 +4271,7 @@ Attempts to remove a machine and its connected belts from the factory at the spe
 Have each machine within the factory perform their action. Actions should be performed in order of position, from top row to bottom with ties broken left column to right.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="2dd7836a" class="cell" data-execution_count="107">
+<div id="c335d37c" class="cell" data-execution_count="107">
 <div class="sourceCode cell-code" id="cb197"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb197-1"><a href="#cb197-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> dims <span class="op">=</span> (<span class="dv">4</span>, <span class="dv">2</span>)</span>
 <span id="cb197-2"><a href="#cb197-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> drill <span class="op">=</span> Drill(<span class="va">None</span>, <span class="st">&#39;C&#39;</span>) </span>
 <span id="cb197-3"><a href="#cb197-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> rocket <span class="op">=</span> Rocket(<span class="va">None</span>, <span class="dv">100</span>)</span>
@@ -4280,19 +4280,19 @@ Have each machine within the factory perform their action. Actions should be per
 <span id="cb197-6"><a href="#cb197-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> machines <span class="op">=</span> {(<span class="dv">0</span>,<span class="dv">0</span>): drill, (<span class="dv">1</span>,<span class="dv">0</span>): belt, (<span class="dv">2</span>,<span class="dv">0</span>): rocket, (<span class="dv">2</span>,<span class="dv">1</span>): another_belt}</span>
 <span id="cb197-7"><a href="#cb197-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory <span class="op">=</span> Factory(dims, machines)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="9aa3fc8d" class="cell" data-execution_count="108">
+<div id="d10df0b4" class="cell" data-execution_count="108">
 <div class="sourceCode cell-code" id="cb198"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb198-1"><a href="#cb198-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(factory)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="108">
 <pre><code>&#39;4,2\n0,0,D,X,C\n1,0,B,X,0,0,2,0\n2,0,R,X,100\n2,1,B,X,2,0,X,X&#39;</code></pre>
 </div>
 </div>
-<div id="f9915dab" class="cell" data-execution_count="109">
+<div id="cb845e66" class="cell" data-execution_count="109">
 <div class="sourceCode cell-code" id="cb200"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb200-1"><a href="#cb200-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_dims()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="109">
 <pre><code>(4, 2)</code></pre>
 </div>
 </div>
-<div id="1c227f47" class="cell" data-execution_count="110">
+<div id="19748d75" class="cell" data-execution_count="110">
 <div class="sourceCode cell-code" id="cb202"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb202-1"><a href="#cb202-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="110">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4301,44 +4301,44 @@ Have each machine within the factory perform their action. Actions should be per
  (2, 1): Belt(None, Rocket(None, 100), None)}</code></pre>
 </div>
 </div>
-<div id="2fd135b3" class="cell" data-execution_count="111">
+<div id="50b49069" class="cell" data-execution_count="111">
 <div class="sourceCode cell-code" id="cb204"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb204-1"><a href="#cb204-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_pos(Rocket(<span class="va">None</span>, <span class="dv">100</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="6daeecf3" class="cell" data-execution_count="112">
+<div id="02e943a1" class="cell" data-execution_count="112">
 <div class="sourceCode cell-code" id="cb205"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb205-1"><a href="#cb205-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_pos(rocket)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="112">
 <pre><code>(2, 0)</code></pre>
 </div>
 </div>
-<div id="ab4d1bbf" class="cell" data-execution_count="113">
+<div id="72e87c2b" class="cell" data-execution_count="113">
 <div class="sourceCode cell-code" id="cb207"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb207-1"><a href="#cb207-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_connected_belts(rocket)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="113">
 <pre><code>[(Belt(None, Drill(None, &#39;C&#39;), Rocket(None, 100)), False),
  (Belt(None, Rocket(None, 100), None), True)]</code></pre>
 </div>
 </div>
-<div id="b721548c" class="cell" data-execution_count="114">
+<div id="d04ae9c8" class="cell" data-execution_count="114">
 <div class="sourceCode cell-code" id="cb209"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb209-1"><a href="#cb209-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_rockets()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="114">
 <pre><code>[Rocket(None, 100)]</code></pre>
 </div>
 </div>
-<div id="2abb52a0" class="cell" data-execution_count="115">
+<div id="e09dbae6" class="cell" data-execution_count="115">
 <div class="sourceCode cell-code" id="cb211"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb211-1"><a href="#cb211-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> another_rocket <span class="op">=</span> Rocket(Satellite(), <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="ddb2b1c6" class="cell" data-execution_count="116">
+<div id="b03dcda7" class="cell" data-execution_count="116">
 <div class="sourceCode cell-code" id="cb212"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb212-1"><a href="#cb212-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.add_machine((<span class="dv">0</span>,<span class="dv">0</span>), another_rocket) <span class="co"># Position occupied</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="116">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="19f47084" class="cell" data-execution_count="117">
+<div id="9858b66d" class="cell" data-execution_count="117">
 <div class="sourceCode cell-code" id="cb214"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb214-1"><a href="#cb214-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.add_machine((<span class="dv">6</span>,<span class="dv">6</span>), another_rocket) <span class="co"># Outside Factory</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="117">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="02ec91c6" class="cell" data-execution_count="118">
+<div id="697bd927" class="cell" data-execution_count="118">
 <div class="sourceCode cell-code" id="cb216"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb216-1"><a href="#cb216-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="118">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4347,13 +4347,13 @@ Have each machine within the factory perform their action. Actions should be per
  (2, 1): Belt(None, Rocket(None, 100), None)}</code></pre>
 </div>
 </div>
-<div id="7be5f438" class="cell" data-execution_count="119">
+<div id="755aede3" class="cell" data-execution_count="119">
 <div class="sourceCode cell-code" id="cb218"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb218-1"><a href="#cb218-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.add_machine((<span class="dv">1</span>,<span class="dv">1</span>), another_rocket)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="119">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="8608f2cd" class="cell" data-execution_count="120">
+<div id="844e9fea" class="cell" data-execution_count="120">
 <div class="sourceCode cell-code" id="cb220"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb220-1"><a href="#cb220-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="120">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4363,22 +4363,22 @@ Have each machine within the factory perform their action. Actions should be per
  (1, 1): Rocket(Satellite(), 0)}</code></pre>
 </div>
 </div>
-<div id="c2ee60e2" class="cell" data-execution_count="121">
+<div id="9fe47008" class="cell" data-execution_count="121">
 <div class="sourceCode cell-code" id="cb222"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb222-1"><a href="#cb222-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_rockets()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="121">
 <pre><code>[Rocket(None, 100), Rocket(Satellite(), 0)]</code></pre>
 </div>
 </div>
-<div id="d594b63b" class="cell" data-execution_count="122">
+<div id="7925e8d5" class="cell" data-execution_count="122">
 <div class="sourceCode cell-code" id="cb224"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb224-1"><a href="#cb224-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(factory)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="122">
 <pre><code>&#39;4,2\n0,0,D,X,C\n1,0,B,X,0,0,2,0\n1,1,R,S,0\n2,0,R,X,100\n2,1,B,X,2,0,X,X&#39;</code></pre>
 </div>
 </div>
-<div id="e14836f3" class="cell" data-execution_count="123">
+<div id="66f5b41e" class="cell" data-execution_count="123">
 <div class="sourceCode cell-code" id="cb226"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb226-1"><a href="#cb226-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.advance_time() <span class="co"># drill Spawns Copper and belt pulls it</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="643e2532" class="cell" data-execution_count="124">
+<div id="00d2075e" class="cell" data-execution_count="124">
 <div class="sourceCode cell-code" id="cb227"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb227-1"><a href="#cb227-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="124">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4388,10 +4388,10 @@ Have each machine within the factory perform their action. Actions should be per
  (1, 1): Rocket(None, 10)}</code></pre>
 </div>
 </div>
-<div id="06567cbb" class="cell" data-execution_count="125">
+<div id="c1479850" class="cell" data-execution_count="125">
 <div class="sourceCode cell-code" id="cb229"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb229-1"><a href="#cb229-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.advance_time() <span class="co"># belt pushes copper to rocket which then launches it.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="a2b1aa08" class="cell" data-execution_count="126">
+<div id="d251ecf5" class="cell" data-execution_count="126">
 <div class="sourceCode cell-code" id="cb230"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb230-1"><a href="#cb230-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="126">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4401,13 +4401,13 @@ Have each machine within the factory perform their action. Actions should be per
  (1, 1): Rocket(None, 10)}</code></pre>
 </div>
 </div>
-<div id="10fb533f" class="cell" data-execution_count="127">
+<div id="276a9403" class="cell" data-execution_count="127">
 <div class="sourceCode cell-code" id="cb232"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb232-1"><a href="#cb232-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.remove_machine((<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co"># Nothing there</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="127">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="ef31a5f9" class="cell" data-execution_count="128">
+<div id="79fd5011" class="cell" data-execution_count="128">
 <div class="sourceCode cell-code" id="cb234"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb234-1"><a href="#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="128">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4417,13 +4417,13 @@ Have each machine within the factory perform their action. Actions should be per
  (1, 1): Rocket(None, 10)}</code></pre>
 </div>
 </div>
-<div id="700482c3" class="cell" data-execution_count="129">
+<div id="95c1ff19" class="cell" data-execution_count="129">
 <div class="sourceCode cell-code" id="cb236"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb236-1"><a href="#cb236-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.remove_machine((<span class="dv">2</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="129">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="fb8c672d" class="cell" data-execution_count="130">
+<div id="737943ab" class="cell" data-execution_count="130">
 <div class="sourceCode cell-code" id="cb238"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb238-1"><a href="#cb238-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="130">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;), (1, 1): Rocket(None, 10)}</code></pre>
@@ -4465,26 +4465,26 @@ Tip
 <li><code>file_path</code> is the path of a file containing <em>exactly</em> a valid game state string as described above.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="c73facb7" class="cell" data-execution_count="131">
+<div id="aed7e7fc" class="cell" data-execution_count="131">
 <div class="sourceCode cell-code" id="cb240"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb240-1"><a href="#cb240-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> funds, target, countdown, factory <span class="op">=</span> read_save(<span class="st">&#39;levels/test_level.txt&#39;</span>)</span>
 <span id="cb240-2"><a href="#cb240-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> funds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="131">
 <pre><code>10</code></pre>
 </div>
 </div>
-<div id="b2d603b9" class="cell" data-execution_count="132">
+<div id="f3278d4d" class="cell" data-execution_count="132">
 <div class="sourceCode cell-code" id="cb242"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb242-1"><a href="#cb242-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> target</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="132">
 <pre><code>15</code></pre>
 </div>
 </div>
-<div id="0f45f411" class="cell" data-execution_count="133">
+<div id="2221d5fa" class="cell" data-execution_count="133">
 <div class="sourceCode cell-code" id="cb244"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb244-1"><a href="#cb244-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> countdown</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="133">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="66fa884f" class="cell" data-execution_count="134">
+<div id="48b279e0" class="cell" data-execution_count="134">
 <div class="sourceCode cell-code" id="cb246"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb246-1"><a href="#cb246-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="134">
 <pre><code>Factory((4, 2), {(0, 0): Drill(None, &#39;C&#39;), (0, 1): Belt(None, Drill(None, &#39;C&#39;), Assembler(None)), (1, 0): Belt(None, Drill(Iron(), &#39;I&#39;), Assembler(None)), (1, 1): Assembler(None), (2, 0): Drill(Iron(), &#39;I&#39;), (2, 1): Belt(None, Assembler(None), Rocket(None, 1)), (3, 1): Rocket(None, 1)})</code></pre>
@@ -4545,7 +4545,7 @@ Caution
 </div>
 </div>
 <p><u>Example:</u></p>
-<div id="94156533" class="cell" data-execution_count="135">
+<div id="1d7d1a63" class="cell" data-execution_count="135">
 <div class="sourceCode cell-code" id="cb248"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb248-1"><a href="#cb248-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> funds, target, countdown, factory <span class="op">=</span> read_save(<span class="st">&#39;levels/test_level.txt&#39;</span>)</span>
 <span id="cb248-2"><a href="#cb248-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model <span class="op">=</span> FactoriaModel(factory, funds, target, countdown)</span>
 <span id="cb248-3"><a href="#cb248-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -4553,100 +4553,100 @@ Caution
 <pre><code>FactoriaModel(Factory((4, 2), {(0, 0): Drill(None, &#39;C&#39;), (0, 1): Belt(None, Drill(None, &#39;C&#39;), Assembler(None)), (1, 0): Belt(None, Drill(Iron(), &#39;I&#39;), Assembler(None)), (1, 1): Assembler(None), (2, 0): Drill(Iron(), &#39;I&#39;), (2, 1): Belt(None, Assembler(None), Rocket(None, 1)), (3, 1): Rocket(None, 1)}), 10, 15, 1)</code></pre>
 </div>
 </div>
-<div id="c791c341" class="cell" data-execution_count="136">
+<div id="2196c7d4" class="cell" data-execution_count="136">
 <div class="sourceCode cell-code" id="cb250"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb250-1"><a href="#cb250-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="136">
 <pre><code>&#39;10\n15\n1\n4,2\n0,0,D,X,C\n0,1,B,X,0,0,1,1\n1,0,B,X,2,0,1,1\n1,1,A,X\n2,0,D,I,I\n2,1,B,X,1,1,3,1\n3,1,R,X,1&#39;</code></pre>
 </div>
 </div>
-<div id="9964dce9" class="cell" data-execution_count="137">
+<div id="491043dc" class="cell" data-execution_count="137">
 <div class="sourceCode cell-code" id="cb252"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb252-1"><a href="#cb252-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_factory()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="137">
 <pre><code>Factory((4, 2), {(0, 0): Drill(None, &#39;C&#39;), (0, 1): Belt(None, Drill(None, &#39;C&#39;), Assembler(None)), (1, 0): Belt(None, Drill(Iron(), &#39;I&#39;), Assembler(None)), (1, 1): Assembler(None), (2, 0): Drill(Iron(), &#39;I&#39;), (2, 1): Belt(None, Assembler(None), Rocket(None, 1)), (3, 1): Rocket(None, 1)})</code></pre>
 </div>
 </div>
-<div id="3470ec27" class="cell" data-execution_count="138">
+<div id="4344c5cc" class="cell" data-execution_count="138">
 <div class="sourceCode cell-code" id="cb254"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb254-1"><a href="#cb254-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="138">
 <pre><code>10</code></pre>
 </div>
 </div>
-<div id="fda344d3" class="cell" data-execution_count="139">
+<div id="6236d885" class="cell" data-execution_count="139">
 <div class="sourceCode cell-code" id="cb256"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb256-1"><a href="#cb256-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_target()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="139">
 <pre><code>15</code></pre>
 </div>
 </div>
-<div id="51e5c609" class="cell" data-execution_count="140">
+<div id="929858ec" class="cell" data-execution_count="140">
 <div class="sourceCode cell-code" id="cb258"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb258-1"><a href="#cb258-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_timer()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="140">
 <pre><code>1</code></pre>
 </div>
 </div>
-<div id="2e23618f" class="cell" data-execution_count="141">
+<div id="0ff96f3a" class="cell" data-execution_count="141">
 <div class="sourceCode cell-code" id="cb260"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb260-1"><a href="#cb260-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_won()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="141">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="885ef6b9" class="cell" data-execution_count="142">
+<div id="72a134c8" class="cell" data-execution_count="142">
 <div class="sourceCode cell-code" id="cb262"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb262-1"><a href="#cb262-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_lost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="142">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="a4440e21" class="cell" data-execution_count="143">
+<div id="352f87e1" class="cell" data-execution_count="143">
 <div class="sourceCode cell-code" id="cb264"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb264-1"><a href="#cb264-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.advance_time()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="bfb256c0" class="cell" data-execution_count="144">
+<div id="6d3604a9" class="cell" data-execution_count="144">
 <div class="sourceCode cell-code" id="cb265"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb265-1"><a href="#cb265-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_timer()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="144">
 <pre><code>0</code></pre>
 </div>
 </div>
-<div id="4dfa98a3" class="cell" data-execution_count="145">
+<div id="107a2a96" class="cell" data-execution_count="145">
 <div class="sourceCode cell-code" id="cb267"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb267-1"><a href="#cb267-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="145">
 <pre><code>11</code></pre>
 </div>
 </div>
-<div id="6b6219bb" class="cell" data-execution_count="146">
+<div id="efc1b7c9" class="cell" data-execution_count="146">
 <div class="sourceCode cell-code" id="cb269"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb269-1"><a href="#cb269-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_lost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="146">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="de936c18" class="cell" data-execution_count="147">
+<div id="8f3bc84f" class="cell" data-execution_count="147">
 <div class="sourceCode cell-code" id="cb271"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb271-1"><a href="#cb271-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.advance_time()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="b639fc6e" class="cell" data-execution_count="148">
+<div id="47f51974" class="cell" data-execution_count="148">
 <div class="sourceCode cell-code" id="cb272"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb272-1"><a href="#cb272-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.advance_time()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="282a0903" class="cell" data-execution_count="149">
+<div id="0e3431a9" class="cell" data-execution_count="149">
 <div class="sourceCode cell-code" id="cb273"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb273-1"><a href="#cb273-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_timer()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="149">
 <pre><code>-2</code></pre>
 </div>
 </div>
-<div id="107db080" class="cell" data-execution_count="150">
+<div id="2d2d755e" class="cell" data-execution_count="150">
 <div class="sourceCode cell-code" id="cb275"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb275-1"><a href="#cb275-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="150">
 <pre><code>16</code></pre>
 </div>
 </div>
-<div id="249ce383" class="cell" data-execution_count="151">
+<div id="06770b0f" class="cell" data-execution_count="151">
 <div class="sourceCode cell-code" id="cb277"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb277-1"><a href="#cb277-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_won()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="151">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="11fbd827" class="cell" data-execution_count="152">
+<div id="10b91fdc" class="cell" data-execution_count="152">
 <div class="sourceCode cell-code" id="cb279"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb279-1"><a href="#cb279-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.has_lost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="152">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="7b2a6408" class="cell" data-execution_count="153">
+<div id="3f325ee2" class="cell" data-execution_count="153">
 <div class="sourceCode cell-code" id="cb281"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb281-1"><a href="#cb281-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="153">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4658,19 +4658,19 @@ Caution
  (3, 1): Rocket(None, 0)}</code></pre>
 </div>
 </div>
-<div id="555faeca" class="cell" data-execution_count="154">
+<div id="f3e9e70e" class="cell" data-execution_count="154">
 <div class="sourceCode cell-code" id="cb283"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb283-1"><a href="#cb283-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.remove_machine((<span class="dv">3</span>,<span class="dv">0</span>)) <span class="co"># Nothing present</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="154">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="7a48d959" class="cell" data-execution_count="155">
+<div id="aa677825" class="cell" data-execution_count="155">
 <div class="sourceCode cell-code" id="cb285"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb285-1"><a href="#cb285-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.remove_machine((<span class="op">-</span><span class="dv">3</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="155">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="c67fee68" class="cell" data-execution_count="156">
+<div id="61747ff3" class="cell" data-execution_count="156">
 <div class="sourceCode cell-code" id="cb287"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb287-1"><a href="#cb287-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="156">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4682,49 +4682,49 @@ Caution
  (3, 1): Rocket(None, 0)}</code></pre>
 </div>
 </div>
-<div id="5e119051" class="cell" data-execution_count="157">
+<div id="ff0b5659" class="cell" data-execution_count="157">
 <div class="sourceCode cell-code" id="cb289"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb289-1"><a href="#cb289-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.remove_machine((<span class="dv">1</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="157">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="b0731ad3" class="cell" data-execution_count="158">
+<div id="c1af055e" class="cell" data-execution_count="158">
 <div class="sourceCode cell-code" id="cb291"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb291-1"><a href="#cb291-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="158">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;), (2, 0): Drill(Iron(), &#39;I&#39;), (3, 1): Rocket(None, 0)}</code></pre>
 </div>
 </div>
-<div id="490f0486" class="cell" data-execution_count="159">
+<div id="4695f4e5" class="cell" data-execution_count="159">
 <div class="sourceCode cell-code" id="cb293"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb293-1"><a href="#cb293-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_assembler((<span class="dv">0</span>,<span class="dv">0</span>)) <span class="co"># Occupied</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="159">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="a19fa794" class="cell" data-execution_count="160">
+<div id="2a7191f4" class="cell" data-execution_count="160">
 <div class="sourceCode cell-code" id="cb295"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb295-1"><a href="#cb295-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_assembler((<span class="dv">6</span>,<span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="160">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="29f50978" class="cell" data-execution_count="161">
+<div id="885335c7" class="cell" data-execution_count="161">
 <div class="sourceCode cell-code" id="cb297"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb297-1"><a href="#cb297-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="161">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;), (2, 0): Drill(Iron(), &#39;I&#39;), (3, 1): Rocket(None, 0)}</code></pre>
 </div>
 </div>
-<div id="2c535f2d" class="cell" data-execution_count="162">
+<div id="59dbeb25" class="cell" data-execution_count="162">
 <div class="sourceCode cell-code" id="cb299"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb299-1"><a href="#cb299-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="162">
 <pre><code>16</code></pre>
 </div>
 </div>
-<div id="538d6087" class="cell" data-execution_count="163">
+<div id="a6772dc7" class="cell" data-execution_count="163">
 <div class="sourceCode cell-code" id="cb301"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb301-1"><a href="#cb301-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_assembler((<span class="dv">1</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="163">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="84bef2e3" class="cell" data-execution_count="164">
+<div id="ac6d85e2" class="cell" data-execution_count="164">
 <div class="sourceCode cell-code" id="cb303"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb303-1"><a href="#cb303-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="164">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4733,25 +4733,25 @@ Caution
  (1, 1): Assembler(None)}</code></pre>
 </div>
 </div>
-<div id="0513740f" class="cell" data-execution_count="165">
+<div id="0de4e7f9" class="cell" data-execution_count="165">
 <div class="sourceCode cell-code" id="cb305"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb305-1"><a href="#cb305-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="165">
 <pre><code>11</code></pre>
 </div>
 </div>
-<div id="730ca1b9" class="cell" data-execution_count="166">
+<div id="7bf158d9" class="cell" data-execution_count="166">
 <div class="sourceCode cell-code" id="cb307"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb307-1"><a href="#cb307-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_belt((<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">0</span>,<span class="dv">0</span>), (<span class="dv">0</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="166">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="35269b2d" class="cell" data-execution_count="167">
+<div id="5d803780" class="cell" data-execution_count="167">
 <div class="sourceCode cell-code" id="cb309"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb309-1"><a href="#cb309-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_belt((<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">3</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="167">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="72f8c040" class="cell" data-execution_count="168">
+<div id="4070665d" class="cell" data-execution_count="168">
 <div class="sourceCode cell-code" id="cb311"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb311-1"><a href="#cb311-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="168">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4760,13 +4760,13 @@ Caution
  (1, 1): Assembler(None)}</code></pre>
 </div>
 </div>
-<div id="03ddd7e7" class="cell" data-execution_count="169">
+<div id="aa46697b" class="cell" data-execution_count="169">
 <div class="sourceCode cell-code" id="cb313"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb313-1"><a href="#cb313-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_belt((<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">0</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="169">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="a5c6f1a4" class="cell" data-execution_count="170">
+<div id="0dce18e7" class="cell" data-execution_count="170">
 <div class="sourceCode cell-code" id="cb315"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb315-1"><a href="#cb315-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="170">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4776,13 +4776,13 @@ Caution
  (0, 1): Belt(None, Assembler(None), Drill(None, &#39;C&#39;))}</code></pre>
 </div>
 </div>
-<div id="29ba0ef1" class="cell" data-execution_count="171">
+<div id="df1032b3" class="cell" data-execution_count="171">
 <div class="sourceCode cell-code" id="cb317"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb317-1"><a href="#cb317-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_belt((<span class="dv">1</span>,<span class="dv">0</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">2</span>,<span class="dv">1</span>)) <span class="co"># Already source</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="171">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="628ac002" class="cell" data-execution_count="172">
+<div id="62e2a065" class="cell" data-execution_count="172">
 <div class="sourceCode cell-code" id="cb319"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb319-1"><a href="#cb319-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="172">
 <pre><code>{(0, 0): Drill(None, &#39;C&#39;),
@@ -4792,37 +4792,37 @@ Caution
  (0, 1): Belt(None, Assembler(None), Drill(None, &#39;C&#39;))}</code></pre>
 </div>
 </div>
-<div id="6805fbbc" class="cell" data-execution_count="173">
+<div id="7be25e08" class="cell" data-execution_count="173">
 <div class="sourceCode cell-code" id="cb321"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb321-1"><a href="#cb321-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.remove_machine((<span class="dv">0</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="173">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="5b487590" class="cell" data-execution_count="174">
+<div id="b331ad31" class="cell" data-execution_count="174">
 <div class="sourceCode cell-code" id="cb323"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb323-1"><a href="#cb323-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_belt((<span class="dv">0</span>,<span class="dv">1</span>), (<span class="dv">1</span>,<span class="dv">1</span>), (<span class="dv">0</span>,<span class="dv">0</span>)) <span class="co"># No machine to target</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="174">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="8c06ab11" class="cell" data-execution_count="175">
+<div id="379cbeec" class="cell" data-execution_count="175">
 <div class="sourceCode cell-code" id="cb325"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb325-1"><a href="#cb325-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="175">
 <pre><code>{(2, 0): Drill(Iron(), &#39;I&#39;), (3, 1): Rocket(None, 0), (1, 1): Assembler(None)}</code></pre>
 </div>
 </div>
-<div id="b405a688" class="cell" data-execution_count="176">
+<div id="dbd85354" class="cell" data-execution_count="176">
 <div class="sourceCode cell-code" id="cb327"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb327-1"><a href="#cb327-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="176">
 <pre><code>10</code></pre>
 </div>
 </div>
-<div id="4a6fe09b" class="cell" data-execution_count="177">
+<div id="d1ac824d" class="cell" data-execution_count="177">
 <div class="sourceCode cell-code" id="cb329"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb329-1"><a href="#cb329-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_copper_drill((<span class="dv">0</span>,<span class="dv">0</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="177">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="2b311a9b" class="cell" data-execution_count="178">
+<div id="34bc9d77" class="cell" data-execution_count="178">
 <div class="sourceCode cell-code" id="cb331"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb331-1"><a href="#cb331-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="178">
 <pre><code>{(2, 0): Drill(Iron(), &#39;I&#39;),
@@ -4831,13 +4831,13 @@ Caution
  (0, 0): Drill(None, &#39;C&#39;)}</code></pre>
 </div>
 </div>
-<div id="1184a637" class="cell" data-execution_count="179">
+<div id="2ed76349" class="cell" data-execution_count="179">
 <div class="sourceCode cell-code" id="cb333"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb333-1"><a href="#cb333-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_iron_drill((<span class="dv">0</span>,<span class="dv">1</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="179">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="ff503111" class="cell" data-execution_count="180">
+<div id="28441520" class="cell" data-execution_count="180">
 <div class="sourceCode cell-code" id="cb335"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb335-1"><a href="#cb335-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="180">
 <pre><code>{(2, 0): Drill(Iron(), &#39;I&#39;),
@@ -4847,19 +4847,19 @@ Caution
  (0, 1): Drill(None, &#39;I&#39;)}</code></pre>
 </div>
 </div>
-<div id="97be86e5" class="cell" data-execution_count="181">
+<div id="3fab8002" class="cell" data-execution_count="181">
 <div class="sourceCode cell-code" id="cb337"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb337-1"><a href="#cb337-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="181">
 <pre><code>6</code></pre>
 </div>
 </div>
-<div id="8bbc324f" class="cell" data-execution_count="182">
+<div id="01deda38" class="cell" data-execution_count="182">
 <div class="sourceCode cell-code" id="cb339"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb339-1"><a href="#cb339-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.add_rocket((<span class="dv">3</span>,<span class="dv">0</span>)) <span class="co"># Costs 20 :(</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="182">
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="713643a0" class="cell" data-execution_count="183">
+<div id="b7774169" class="cell" data-execution_count="183">
 <div class="sourceCode cell-code" id="cb341"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb341-1"><a href="#cb341-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> factory.get_machines()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="183">
 <pre><code>{(2, 0): Drill(Iron(), &#39;I&#39;),
@@ -4869,7 +4869,7 @@ Caution
  (0, 1): Drill(None, &#39;I&#39;)}</code></pre>
 </div>
 </div>
-<div id="29794e1f" class="cell" data-execution_count="184">
+<div id="035bfa74" class="cell" data-execution_count="184">
 <div class="sourceCode cell-code" id="cb343"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb343-1"><a href="#cb343-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> model.get_funds()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="184">
 <pre><code>6</code></pre>
@@ -4934,57 +4934,57 @@ Prompts the player for a command using <code>COMMAND_PROMPT</code> from <code>su
 Conducts a game of Factoria from start to finish, following the <a href="#gameplay">Gameplay section</a>. Refer to the <code>gameplay/</code> folder provided with this assignment for relevant examples.</li>
 </ul>
 <p><u>Example:</u></p>
-<div id="02dd6475" class="cell" data-execution_count="185">
+<div id="9a8f74bd" class="cell" data-execution_count="185">
 <div class="sourceCode cell-code" id="cb345"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb345-1"><a href="#cb345-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game <span class="op">=</span> Factoria(<span class="st">&#39;levels/level1.txt&#39;</span>)</span>
 <span id="cb345-2"><a href="#cb345-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="185">
 <pre><code>Factoria(&#39;levels/level1.txt&#39;)</code></pre>
 </div>
 </div>
-<div id="0a8524fd" class="cell" data-execution_count="186">
+<div id="9db725eb" class="cell" data-execution_count="186">
 <div class="sourceCode cell-code" id="cb347"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb347-1"><a href="#cb347-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.save_game(<span class="st">&#39;save.txt&#39;</span>)</span>
 <span id="cb347-2"><a href="#cb347-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="186">
 <pre><code>Factoria(&#39;save.txt&#39;)</code></pre>
 </div>
 </div>
-<div id="9d92a94b" class="cell" data-execution_count="187">
+<div id="c18ec777" class="cell" data-execution_count="187">
 <div class="sourceCode cell-code" id="cb349"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb349-1"><a href="#cb349-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.load_game(<span class="st">&#39;levels/level3.txt&#39;</span>)</span>
 <span id="cb349-2"><a href="#cb349-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="187">
 <pre><code>Factoria(&#39;levels/level3.txt&#39;)</code></pre>
 </div>
 </div>
-<div id="13fb46da" class="cell" data-execution_count="188">
+<div id="b0d40ac8" class="cell" data-execution_count="188">
 <div class="sourceCode cell-code" id="cb351"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb351-1"><a href="#cb351-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(game)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="188">
 <pre><code>&#39;0\n25\n5\n2,4\n0,0,R,P,0\n0,1,B,C,1,1,0,0\n0,2,B,S,0,3,0,1\n0,3,D,C,C\n1,0,B,P,0,0,1,1\n1,1,A,I\n1,2,B,I,1,3,1,1\n1,3,D,I,I&#39;</code></pre>
 </div>
 </div>
-<div id="e955b6fb" class="cell" data-execution_count="189">
+<div id="0c913a45" class="cell" data-execution_count="189">
 <div class="sourceCode cell-code" id="cb353"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb353-1"><a href="#cb353-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.get_command() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>Awaiting your command: A 1 100
 (&#39;A&#39;, [&#39;1&#39;, &#39;100&#39;])</code></pre>
-<div id="35f4366e" class="cell" data-execution_count="190">
+<div id="861a8969" class="cell" data-execution_count="190">
 <div class="sourceCode cell-code" id="cb355"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb355-1"><a href="#cb355-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.get_command() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>Awaiting your command: A 1 number</code></pre>
-<div id="51366ab2" class="cell" data-execution_count="191">
+<div id="67c87ca5" class="cell" data-execution_count="191">
 <div class="sourceCode cell-code" id="cb357"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb357-1"><a href="#cb357-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.get_command() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>Awaiting your command: b 0 0 4 2 6 7
 (&#39;B&#39;, [&#39;0&#39;, &#39;0&#39;, &#39;4&#39;, &#39;2&#39;, &#39;6&#39;, &#39;7&#39;])</code></pre>
-<div id="e82ec6f1" class="cell" data-execution_count="192">
+<div id="30e9d21f" class="cell" data-execution_count="192">
 <div class="sourceCode cell-code" id="cb359"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb359-1"><a href="#cb359-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.get_command() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>Awaiting your command: Could there perhaps be a spoon?</code></pre>
-<div id="16b1a69d" class="cell" data-execution_count="193">
+<div id="823b132f" class="cell" data-execution_count="193">
 <div class="sourceCode cell-code" id="cb361"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb361-1"><a href="#cb361-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.get_command() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre><code>Awaiting your command: L awa 
 (&#39;L&#39;, [&#39;awa&#39;])</code></pre>
-<div id="bdefc9e2" class="cell" data-execution_count="194">
+<div id="59bffc26" class="cell" data-execution_count="194">
 <div class="sourceCode cell-code" id="cb363"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb363-1"><a href="#cb363-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> game.update_display()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                                                                                
@@ -5052,7 +5052,7 @@ Conducts a game of Factoria from start to finish, following the <a href="#gamepl
 <!-- 
 [Example:]{.underline}
 
-::: {#ebcc2def .cell execution_count=195}
+::: {#4a487d60 .cell execution_count=195}
 ``` {.python .cell-code}
 >>> 
 ```
@@ -5196,7 +5196,7 @@ This assignment must be your own individual work. By submitting the assignment, 
 Please read the section in the course profile about plagiarism. You are encouraged to complete *both* parts A and B of the [academic integrity modules](https://web.library.uq.edu.au/library-services/it/learnuq-blackboard-help/academic-integrity-modules) *before* starting this assignment. Submitted assignments will be electronically checked for potential cases of plagiarism. -->
 <!-- 
 
-::: {#7a082ad6 .cell execution_count=196}
+::: {#0570e334 .cell execution_count=196}
 ``` {.python .cell-code}
 >>> pass
 ```
